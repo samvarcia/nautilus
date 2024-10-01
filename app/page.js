@@ -1,5 +1,10 @@
 import Image from "next/image";
 import styles from "./page.module.css";
+import Explanation from "./components/Explanation";
+import Program from "./components/Program";
+import Protegees from "./components/Protegees";
+import Patrons from "./components/Patrons";
+import Footer from './components/Footer'
 
 export default function Home() {
   return (
@@ -28,6 +33,11 @@ export default function Home() {
       </div>
     </section>
       </main>
+      <Explanation />
+      <Program />
+      <Protegees />
+      <Patrons />
+      <Footer />
     </div>
   );
 }

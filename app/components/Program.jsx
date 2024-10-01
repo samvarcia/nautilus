@@ -1,0 +1,46 @@
+import React from 'react';
+import Image from 'next/image';
+import styles from './Program.module.css';
+
+const Program = () => {
+  return (
+    <section className={styles.programSection}>
+      <h2 className={styles.title}>The program</h2>
+      <div className={styles.contentWrapper}>
+        <div className={styles.column}>
+          <div className={styles.imageWrapper}>
+            <Image src="/half.png" alt="Half circle" width={150} height={150} className={styles.curveImage} />
+          </div>
+          <div className={styles.content}>
+            <h3 className={styles.subtitle}>First 3 months:</h3>
+            <p className={styles.description}>Life at the Casa Nautilus</p>
+            <ul className={styles.list}>
+              <li>Onboarding</li>
+              <li>Find yourself a rhythm</li>
+              <li>Immerse yourself into your quest</li>
+              <li>Teach and be taught</li>
+              <li>Celebration banquet</li>
+            </ul>
+          </div>
+        </div>
+        <div className={styles.column}>
+          <div className={styles.imageWrapper}>
+            <Image src="/full.png" alt="Full circle" width={150} height={150} className={styles.curveImage} />
+          </div>
+          <div className={styles.content}>
+            <h3 className={styles.subtitle}>Last 3 months:</h3>
+            <p className={styles.description}>Your own quest</p>
+            <ul className={styles.list}>
+              <li>Dive into a new adventure</li>
+              <li>Weekly online check-ins</li>
+              <li>Delivering the documentation of your experience</li>
+              <li>Closing ceremony</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default Program;

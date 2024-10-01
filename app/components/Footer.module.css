@@ -1,0 +1,42 @@
+.footer{
+    color: var(--cream);
+    background: var(--foreground);
+    position: relative;
+    bottom: 0;
+}
+.footer ul {
+    list-style: none;
+}
+.footerContent{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 50px 150px;
+    gap: 50px;
+}
+.footerTop{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footerTop li{
+    margin-bottom: 3px;
+}
+.leftFooter{
+    display: flex;
+    justify-content: space-between;
+    width: 30%;
+}
+.footerRight {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+}
+.footerBottom{
+    width: 100%;
+}
+.logo {
+    width: 100%;
+}
