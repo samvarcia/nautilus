@@ -1,0 +1,86 @@
+.manifestoContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+.manifestoContent h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-family: var(--font-feature-display);
+    font-weight: 900;
+    letter-spacing: -0.1rem;
+    margin: 2rem 0;
+}
+
+.paraSub {
+    font-size: clamp(1.8rem, 5vw, 5.3rem);
+    font-family: var(--font-feature-display);
+    font-weight: 700;
+    letter-spacing: -0.1rem;
+    margin-bottom: 2.5rem;
+}
+
+.text p {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+    margin-bottom: 20px;
+}
+
+.text {
+    width: 100%;
+    max-width: 800px;
+}
+
+.firstParagraph, .secondParagraph, .fourthParagraph {
+    display: flex;
+    justify-content: space-between;
+    gap: 100px;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.thirdParagraph {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 1rem;
+    margin: 2rem 0;
+}
+
+.thirdParagraph .paraSub {
+    font-size: clamp(2rem, 6vw, 4.5rem);
+    line-height: 1.2;
+    width: 100%;
+}
+
+.thirdParagraph img {
+    width: 100%;
+    max-width: 70%;
+    height: auto;
+}
+
+.firstParagraph img, .secondParagraph img, .fourthParagraph img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    margin: 1rem 0;
+}
+
+@media (max-width: 768px) {
+    .text {
+        width: 100%;
+    }
+    
+    .firstParagraph, .secondParagraph, .fourthParagraph {
+        padding: 5px;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .thirdParagraph {
+        flex-wrap: wrap;
+padding: 5px;
+gap: 20px;
+
+    }
+}
