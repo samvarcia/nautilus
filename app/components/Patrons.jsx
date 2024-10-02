@@ -1,4 +1,5 @@
 import styles from './Patrons.module.css';
+import PatronProfileCard from './PatronProfileCard';
 
 const Patrons = () => {
   return (
@@ -8,7 +9,24 @@ const Patrons = () => {
         <p className={styles.description}>
         Behind every talent is a supporter who believes in their journey. Our patrons provide the financial resources you need to elevate your craft.
         </p>
-       
+        <div className={styles.patrons}>
+          <PatronProfileCard 
+            imageSrc="/Danielle.png" 
+            patronName="Danielle Strachman" 
+          />
+          <PatronProfileCard 
+            imageSrc="/Danielle.png" 
+            patronName="Danielle Strachman" 
+          />
+          <PatronProfileCard 
+            imageSrc="/Danielle.png" 
+            patronName="Danielle Strachman" 
+          />
+          <PatronProfileCard 
+            imageSrc="/Danielle.png" 
+            patronName="Danielle Strachman" 
+          />
+        </div>
       </div>
     </section>
   );
