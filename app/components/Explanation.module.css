@@ -3,12 +3,12 @@
     background-size: cover;
     background-position: center;
     /* filter: blur(1px); */
-    padding: 4rem 2rem;
+    padding: 4rem 4rem;
     color:  var(--foreground);
     min-height: 90vh;
     display: flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+    justify-content: center; */
   }
   
   .content {
