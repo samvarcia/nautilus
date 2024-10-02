@@ -3,6 +3,8 @@
     background: var(--foreground);
     position: relative;
     bottom: 0;
+    font-family: var(--font-feature-display);
+    font-weight: 500;
 }
 .footer ul {
     list-style: none;

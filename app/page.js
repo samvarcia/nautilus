@@ -17,14 +17,16 @@ export default function Home() {
             Nautilus gives you six months to <br />
           </span>
           <span className={styles.textLine}>
-             explore
+            <span className={styles.feature}>
+            explore
+            </span>
             <Image src="/image1.png" alt="Explore" width={100} height={60} className={styles.inlineImage} />
-            , learn
+            , <span className={styles.feature}>learn</span> 
             <Image src="/image3.png" alt="Learn" width={100} height={60} className={styles.inlineImage} />
             and <br />
           </span>
           <span className={styles.textLine}>
-            create
+            <span className={styles.feature}>create</span>
             <Image src="/image2.png" alt="Create" width={100} height={60} className={styles.inlineImage} />
             in complete freedom.
           </span>
