@@ -15,10 +15,10 @@ const Program = () => {
             <h3 className={styles.subtitle}>First 3 months:</h3>
             <p className={styles.description}>Life at the Casa Nautilus</p>
             <ul className={styles.list}>
-              <li>Onboarding</li>
+              <li>Kickoff</li>
               <li>Find yourself a rhythm</li>
               <li>Immerse yourself into your quest</li>
-              <li>Teach and be taught</li>
+              <li>Teach your peers and be taught</li>
               <li>Celebration banquet</li>
             </ul>
           </div>
