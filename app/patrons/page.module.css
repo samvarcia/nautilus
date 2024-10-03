@@ -1,0 +1,32 @@
+.PatronsContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 4rem;
+}
+
+.PatronsContent h1 {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-family: var(--font-feature-display);
+    font-weight: 900;
+    letter-spacing: -0.1rem;
+    margin: 2rem 0;
+}
+.PatronsContent p, .becomeContainer p {
+    font-size: clamp(1rem, 3vw, 1.4rem);
+}
+
+.patrons{
+    margin: 2rem 0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, 50%);
+    /* gap: 1rem; */
+}
+.becomeContainer h3 {
+    font-family: var(--font-feature-display);
+    font-weight: 700;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
