@@ -1,9 +1,6 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-// import Explanation from "./components/Explanation";
-// import Program from "./components/Program";
-// import Protegees from "./components/Protegees";
-// import Patrons from "./components/Patrons";
+
 import Footer from "../components/Footer";
 import PatronProfileCard from "../components/PatronProfileCard";
 
@@ -12,7 +9,7 @@ export default function Patrons() {
   return (
     <div className={styles.page}>
         <div className={styles.PatronsContent}>
-            <h1>Patrons</h1>
+            <h1 className={styles.PatronsTitle}>Patrons</h1>
 						<p>Our patrons are the Medicis of the 21st Century. Prominent intellectuals, artists, founders or investors, they are taking action towards a brighter world by supporting the talents of Nautilus. </p>
 									<div className={styles.patrons}>
 										<PatronProfileCard 
