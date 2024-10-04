@@ -13,9 +13,10 @@ export default function Home() {
       <section className={styles.hero}>
       <div className={styles.heroContent}>
         <h1 className={styles.heroText}>
-          <span className={styles.textLine}>
-            Nautilus gives you six months to <br />
+          <span className={styles.logoWrapper}>
+            <Image src="/logo.png" alt="Nautilus" width={150} height={40} className={styles.logoImage} />
           </span>
+          <span>gives you six months to</span>
           <span className={styles.textLine}>
             <span className={styles.feature}>
             explore
