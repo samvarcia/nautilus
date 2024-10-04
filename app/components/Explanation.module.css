@@ -3,7 +3,7 @@
     background-size: cover;
     background-position: center;
     /* filter: blur(1px); */
-    padding: 4rem 4rem;
+    padding: 4rem 7rem;
     color:  var(--foreground);
     min-height: 80vh;
     display: flex;
