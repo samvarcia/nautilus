@@ -33,7 +33,18 @@ const featureDisplay = localFont({
 });
 
 const ppMontrealNeue = localFont({
-  src: './fonts/PPNEUEMONTREAL-BOOK.woff',
+  src : [
+    {
+      path: './fonts/PPNEUEMONTREAL-BOOK.woff',
+      weight: '400',
+      style: 'normal',
+    },
+    {
+      path: './fonts/PPNEUEMONTREAL-THIN.woff',
+      weight: '200',
+      style: 'normal',
+    },
+  ],
   variable: '--font-pp-montreal-neue',
 });
 
