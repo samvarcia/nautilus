@@ -1,5 +1,6 @@
 import styles from './Patrons.module.css';
 import PatronProfileCard from './PatronProfileCard';
+import Link from 'next/link';
 
 const Patrons = () => {
   return (
@@ -11,7 +12,11 @@ const Patrons = () => {
         </p>
         <div className={styles.patrons}>
           <PatronProfileCard 
-            imageSrc="/Danielle.png" 
+            imageSrc="/Danielle2.png" 
+            patronName="Danielle Strachman" 
+          />
+          <PatronProfileCard 
+            imageSrc="/Danielle3.png" 
             patronName="Danielle Strachman" 
           />
           <PatronProfileCard 
@@ -19,13 +24,16 @@ const Patrons = () => {
             patronName="Danielle Strachman" 
           />
           <PatronProfileCard 
-            imageSrc="/Danielle.png" 
+            imageSrc="/Danielle4.png" 
             patronName="Danielle Strachman" 
           />
-          <PatronProfileCard 
-            imageSrc="/Danielle.png" 
-            patronName="Danielle Strachman" 
-          />
+        </div>
+        <div className={styles.cta}>
+          <button className={styles.applyButton}>
+            <Link href="/patrons">
+              Become a patron
+            </Link>
+          </button>
         </div>
       </div>
     </section>

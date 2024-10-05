@@ -14,8 +14,27 @@
 }
 .patrons{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
     flex-wrap: wrap;
+}
+.applyButton {
+    background-color: #02AF54;
+    color: #F8F4EC;
+    border: none;
+    padding: 0.5rem;
+    font-size: 1.4rem;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-family: var(--font-feature-display);
+    font-weight: 400;
+  }
+  .applyButton:hover {
+    background-color: #008c59;
+  }
+.cta{
+    margin: 3rem 0 5rem 0;
+    text-align: center;
 }
