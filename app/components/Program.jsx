@@ -6,6 +6,7 @@ const Program = () => {
   return (
     <section className={styles.programSection}>
       <h2 className={styles.title}>The program</h2>
+      <p className={styles.desc}>Nautilus is designed as a 6-months program to give you a bit of your childhood wander back. Take a break from the noise of your life to follow your curiosity and get intense with your craft.</p>
       <div className={styles.contentWrapper}>
         <div className={styles.column}>
           <div className={styles.imageWrapper}>
