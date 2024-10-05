@@ -1,6 +1,9 @@
 .hero {
   height: 100vh;
-  background: var(--foreground);
+  background-image: url('../public/herobg.png');
+  background-position: center;
+  background-size: cover;  
+  background-repeat: no-repeat;
   color: var(--background);
   display: flex;
   align-items: center;

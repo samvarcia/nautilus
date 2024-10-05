@@ -5,9 +5,14 @@ import styles from "./page.module.css";
 // import Protegees from "./components/Protegees";
 // import Patrons from "./components/Patrons";
 import Footer from "../components/Footer";
+import NaHeader from "../components/NaHeader";
 
 export default function Manifesto() {
   return (
+
+    <>
+				<NaHeader/>
+
     <div className={styles.page}>
         <div className={styles.manifestoContent}>
             <h1>Manifesto</h1>
@@ -50,5 +55,6 @@ export default function Manifesto() {
         </div>
       <Footer />
     </div>
+    </>
   );
 }

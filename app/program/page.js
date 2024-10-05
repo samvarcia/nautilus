@@ -5,9 +5,13 @@ import Footer from "../components/Footer";
 import PatronProfileCard from "../components/PatronProfileCard";
 import Principles from "../components/Principles";
 import Framed from "../components/Framed";
+import NaHeader from "../components/NaHeader";
 
 export default function Program() {
   return (
+    <>
+						<NaHeader/>
+
     <div className={styles.page}>
         <div className={styles.ProgramContent}>
             <h1 className={styles.ProgramTitle}>Program</h1>
@@ -57,5 +61,6 @@ export default function Program() {
         </div>	
       <Footer />
     </div>
+    </>
   );
 }

@@ -1,12 +1,14 @@
 import Image from "next/image";
 import styles from "./page.module.css";
-
+import NaHeader from "../components/NaHeader";
 import Footer from "../components/Footer";
 import PatronProfileCard from "../components/PatronProfileCard";
 
 
 export default function Patrons() {
   return (
+    <>
+		<NaHeader/>
     <div className={styles.page}>
         <div className={styles.PatronsContent}>
             <h1 className={styles.PatronsTitle}>Patrons</h1>
@@ -53,8 +55,8 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/image1.png"
-											alt="Group of people looking at a house"
+											src="/grantee.png"
+											alt="Grantee"
 											layout="fill"
 											objectFit="cover"
 											className={styles.image}
@@ -69,8 +71,8 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/image1.png"
-											alt="Group of people looking at a house"
+											src="/comunity.png"
+											alt="Community"
 											layout="fill"
 											objectFit="cover"
 											className={styles.image}
@@ -85,8 +87,8 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/image1.png"
-											alt="Group of people looking at a house"
+											src="/guide.png"
+											alt="Guide"
 											layout="fill"
 											objectFit="cover"
 											className={styles.image}
@@ -101,8 +103,8 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/image1.png"
-											alt="Group of people looking at a house"
+											src="/money.png"
+											alt="Money"
 											layout="fill"
 											objectFit="cover"
 											className={styles.image}
@@ -119,5 +121,6 @@ export default function Patrons() {
         </div>	
       <Footer />
     </div>
+    </>
   );
 }

@@ -5,9 +5,14 @@ import styles from "./page.module.css";
 // import Protegees from "./components/Protegees";
 // import Patrons from "./components/Patrons";
 import Footer from "../components/Footer";
+import NaHeader from "../components/NaHeader";
 
 export default function Faq() {
   return (
+
+    <>
+						<NaHeader/>
+
     <div className={styles.page}>
         <div className={styles.faqContent}>
             <h1>FAQ</h1>
@@ -84,5 +89,6 @@ We have a no asshole policy.</p>
         </div>
       <Footer />
     </div>
+    </>
   );
 }

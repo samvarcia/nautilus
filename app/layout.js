@@ -30,6 +30,7 @@ const featureDisplay = localFont({
     },
   ],
   variable: '--font-feature-display',
+  display: 'swap'
 });
 
 const ppMontrealNeue = localFont({
@@ -51,6 +52,7 @@ const ppMontrealNeue = localFont({
 export const metadata = {
   title: "Nautilus",
   description: "Master Your Craft",
+  display: 'swap'
 };
 
 export default function RootLayout({ children }) {
