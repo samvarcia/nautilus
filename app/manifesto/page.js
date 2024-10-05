@@ -37,7 +37,7 @@ export default function Manifesto() {
 								<p>Nautilus will match you with a patron to pay your bills, and you’ll decide what to learn and create. No tests, no daily grind. Just unfiltered freedom, a community of peers, and the guidance you need.</p>
 								<p>We’re here for you—whether you’re an artist, hacker, writer, scientist, community builder, or a founder.</p>
 							</div>
-							<Image src="/manifesto3.png" alt="School has stolen your childhood" width={1000} height={275} className={styles.curveImage} />
+							<Image src="/manifesto3.png" alt="School has stolen your childhood" width={1100} height={275} className={styles.curveImage} />
 						</div>
 						<div className={styles.fourthParagraph}>
 							<div className={styles.text}>

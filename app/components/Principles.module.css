@@ -1,6 +1,6 @@
 .container {
     /* max-width: 1000px; */
-    margin: 6rem auto;
+    margin: 8rem auto;
     /* padding: 2rem; */
     /* font-family: serif; */
     /* background-color: #f5f5f5; */
@@ -10,7 +10,7 @@
     font-family: var(--font-feature-display);
     font-weight: 700;
     font-size: 3rem;
-    margin-bottom: 3rem;
+    margin-bottom: 3.3rem;
   }
   
   .content {

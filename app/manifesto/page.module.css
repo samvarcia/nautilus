@@ -35,7 +35,7 @@
     display: flex;
     justify-content: space-between;
     gap: 100px;
-    padding: 0 1rem;
+    padding: 0 6rem;
     margin: 2rem 0;
 }
 
@@ -44,7 +44,7 @@
     flex-direction: column;
     align-items: center;
     padding: 0 1rem;
-    margin: 2rem 0;
+    margin: 2.5rem 0;
 }
 
 .thirdParagraph .paraSub {
@@ -55,7 +55,7 @@
 
 .thirdParagraph img {
     width: 100%;
-    max-width: 70%;
+    max-width: 90%;
     height: auto;
 }
 
@@ -64,6 +64,9 @@
     max-width: 350px;
     height: auto;
     margin: 1rem 0;
+}
+.fourthParagraph{
+    margin-bottom: 5rem;
 }
 
 @media (max-width: 768px) {

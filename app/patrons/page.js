@@ -115,6 +115,7 @@ export default function Patrons() {
 									</div>
 								</div>
 						</div>
+						<p className={styles.last}>Join us as a patron by <a href="">filling out this quick form</a>. We’ll get back to you asap.</p>
         </div>	
       <Footer />
     </div>
