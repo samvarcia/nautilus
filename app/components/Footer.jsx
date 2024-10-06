@@ -11,19 +11,20 @@ const Footer = () => {
                 <div className="">
                     <nav>
                         <ul className="">
-                            <li><Link href="/apply" className="">Apply</Link></li>
+                            <li><Link                  href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                  target='_blank' className="">Apply</Link></li>
                             <li><Link href="/program" className="">About the program</Link></li>
                             <li><Link href="/faq" className="">FAQ</Link></li>
                             <li><Link href="/manifesto" className="">Manifesto</Link></li>
-                            <li><Link href="/patron" className="">Become a patron</Link></li>
+                            <li><Link href="/patrons" className="">Become a patron</Link></li>
                         </ul>
                     </nav>
                 </div>
                 <div className="">
                     <ul className="">
                         <li><a href="https://twitter.com/NautilusQuest" target="_blank" rel="noopener noreferrer" className="">Twitter</a></li>
-                        <li><a href="https://www.instagram.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Instagram</a></li>
-                        <li><a href="https://substack.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Substack</a></li>
+                        {/* <li><a href="https://www.instagram.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Instagram</a></li>
+                        <li><a href="https://substack.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Substack</a></li> */}
                     </ul>
                 </div>
             </div>

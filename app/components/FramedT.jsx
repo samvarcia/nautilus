@@ -1,5 +1,6 @@
 import React from 'react';
 import styles from './FramedT.module.css';
+import Link from 'next/link';
 
 const FramedT = () => {
   return (
@@ -16,7 +17,12 @@ const FramedT = () => {
               You are a <span className={styles.highlight}>dropout</span> or on a <span className={styles.highlight}>gap year</span>.
             </p>
           </div>
-          <button className={styles.learnMore}>Learn More</button>
+          <button className={styles.learnMore}>
+            <Link                   href="/program" 
+            >
+              Learn More
+            </Link>
+          </button>
         </div>
       </div>
     </div>

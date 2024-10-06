@@ -1,0 +1,127 @@
+.initialHeader, .scrolledHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-image: url('../../public/menubg.png');
+  background-position: center;
+  background-size: cover;
+  color: #F8F4EC;
+  z-index: 1000;
+  font-family: var(--font-feature-display);
+  font-weight: 400;
+  font-size: 1.7rem;
+}
+
+.initialHeader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px 0;
+}
+.fullLogo, .Logo{
+  height: auto;
+}
+.activeLink {
+  color: #E5D3B3;
+  font-weight: 500;
+
+}
+.scrolledHeader {
+  padding: 1rem 6rem 1.2rem 6rem;
+}
+
+.scrolledHeaderContent {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.nav {
+  display: flex;
+  align-items: center;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-left: 40px;
+}
+
+.menu a {
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.applyButton {
+  background-color: #02AF54;
+  border-radius: 4px;
+  padding: 0.5rem 2.5rem;
+    /* font-size: 1.4rem; */
+    cursor: pointer;
+}
+
+.mobileMenuButton {
+  display: none;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .scrolledHeaderContent {
+    /* flex-direction: column;
+    align-items: flex-start; */
+  }
+  .scrolledHeader {
+    padding: 1rem 3rem;
+  }
+  .initialHeader a {
+    width: fit-content;
+  }
+  .fullLogo{
+    /* height: 60%; */
+    width: 60%;
+  }
+  .nav {
+    width: 100%;
+    justify-content: flex-end;
+  }
+
+  .mobileMenuButton {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-image: url('../../public/menubg.png');
+    background-position: center;
+    background-size: cover;
+  }
+
+  .mobileMenuOpen {
+    display: flex;
+  }
+
+  .menu li {
+    margin: 10px 20px;
+  }
+
+  .applyButton {
+    display: inline-block;
+    margin-top: 10px;
+  }
+}

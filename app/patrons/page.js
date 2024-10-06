@@ -117,7 +117,7 @@ export default function Patrons() {
 									</div>
 								</div>
 						</div>
-						<p className={styles.last}>Join us as a patron by <a href="">filling out this quick form</a>. We’ll get back to you asap.</p>
+						<p className={styles.last}>Join us as a patron by <a href="https://airtable.com/appztBooHuqyfQcSt/pagcIJNkE5ppfxQeD/form"  target="_blank" rel="noopener noreferrer">filling out this quick form</a>. We’ll get back to you asap.</p>
         </div>	
       <Footer />
     </div>

@@ -3,7 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useSpring, animated } from 'react-spring';
-import styles from './NaHeader.module.css';
+import styles from './NaHeaderAlt.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
@@ -37,18 +37,6 @@ const NaHeader = () => {
 
   return (
     <>
-      <animated.header className={styles.initialHeader} style={initialHeaderAnimation}>
-        <Link href="/">
-          <Image 
-            src="/nautilus-logo-full.png" 
-            alt="Nautilus - Master Your Craft" 
-            width={300} 
-            height={100}
-            className={styles.fullLogo}
-          />
-        </Link>
-      </animated.header>
-      
       <animated.header className={styles.scrolledHeader} style={scrolledHeaderAnimation}>
         <div className={styles.scrolledHeaderContent}>
           <Link href="/">

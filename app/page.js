@@ -7,7 +7,7 @@ import Program from "./components/Program";
 import Protegees from "./components/Protegees";
 import Patrons from "./components/Patrons";
 import Footer from './components/Footer';
-import NaHeader from './components/NaHeader';
+import NaHeaderAlt from './components/NaHeaderAlt';
 
 export default function Home() {
   const [showHeader, setShowHeader] = useState(false);
@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      {showHeader && <NaHeader showInitialHeader={false} />}
+      {showHeader && <NaHeaderAlt  />}
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
