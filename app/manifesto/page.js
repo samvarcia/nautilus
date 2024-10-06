@@ -11,7 +11,7 @@ export default function Manifesto() {
   return (
 
     <>
-				<NaHeader/>
+		<NaHeader/>
 
     <div className={styles.page}>
         <div className={styles.manifestoContent}>
