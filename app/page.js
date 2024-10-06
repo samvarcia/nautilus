@@ -56,17 +56,7 @@ export default function Home() {
         </section>
       </main>
       <Explanation />
-      <div className={styles.container}>
-        <div className={styles.stickyContainer}>
-          <img
-            src="/spiral-1.png"
-            alt="Animated Spiral"
-            width={500}
-            height={500}
-            className={styles.spiralImage}
-          />
-        </div>
-      </div>
+      <Program />
       <Protegees />
       <Patrons />
       <Footer />

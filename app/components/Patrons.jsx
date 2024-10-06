@@ -10,30 +10,32 @@ const Patrons = () => {
         <p className={styles.description}>
         Behind every talent is a supporter who believes in their journey. Our patrons provide the financial resources you need to elevate your craft.
         </p>
-        <div className={styles.patrons}>
-          {/* <PatronProfileCard 
-            imageSrc="/Danielle2.png" 
-            patronName="Danielle Strachman" 
-          /> */}
-          <PatronProfileCard 
-            imageSrc="/1517Fund.png" 
-            patronName="1517 Fund" 
-          />
-          <PatronProfileCard 
-            imageSrc="/Danielle.png" 
-            patronName="Danielle Strachman" 
-          />
-          <PatronProfileCard 
-            imageSrc="/TylerCowen.png" 
-            patronName="Tyler Cowen" 
-          />
-        </div>
-        <div className={styles.cta}>
-          <button className={styles.applyButton}>
-            <Link href="/patrons">
-              Become a patron
-            </Link>
-          </button>
+        <div className={styles.wrap}>
+          <div className={styles.patrons}>
+            {/* <PatronProfileCard 
+              imageSrc="/Danielle2.png" 
+              patronName="Danielle Strachman" 
+            /> */}
+            <PatronProfileCard 
+              imageSrc="/Danielle.png" 
+              patronName="Danielle Strachman" 
+            />
+            <PatronProfileCard 
+              imageSrc="/1517Fund.png" 
+              patronName="1517 Fund" 
+            />
+            <PatronProfileCard 
+              imageSrc="/TylerCowen.png" 
+              patronName="Tyler Cowen" 
+            />
+          </div>
+          <div className={styles.cta}>
+            <button className={styles.applyButton}>
+              <Link href="/patrons">
+                Become a patron
+              </Link>
+            </button>
+          </div>
         </div>
       </div>
     </section>
