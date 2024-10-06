@@ -14,7 +14,7 @@
 }
 .patrons{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     margin-top: 2rem;
     flex-wrap: wrap;
@@ -36,5 +36,7 @@
   }
 .cta{
     margin: 3rem 0 5rem 0;
-    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

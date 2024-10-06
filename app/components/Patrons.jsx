@@ -11,21 +11,21 @@ const Patrons = () => {
         Behind every talent is a supporter who believes in their journey. Our patrons provide the financial resources you need to elevate your craft.
         </p>
         <div className={styles.patrons}>
-          <PatronProfileCard 
+          {/* <PatronProfileCard 
             imageSrc="/Danielle2.png" 
             patronName="Danielle Strachman" 
-          />
+          /> */}
           <PatronProfileCard 
-            imageSrc="/Danielle3.png" 
-            patronName="Danielle Strachman" 
+            imageSrc="/1517Fund.png" 
+            patronName="1517 Fund" 
           />
           <PatronProfileCard 
             imageSrc="/Danielle.png" 
             patronName="Danielle Strachman" 
           />
           <PatronProfileCard 
-            imageSrc="/Danielle4.png" 
-            patronName="Danielle Strachman" 
+            imageSrc="/TylerCowen.png" 
+            patronName="Tyler Cowen" 
           />
         </div>
         <div className={styles.cta}>
