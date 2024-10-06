@@ -28,7 +28,7 @@
 
 }
 .scrolledHeader {
-  padding: 3rem 6rem;
+  padding: 1rem 6rem 1.2rem 6rem;
 }
 
 .scrolledHeaderContent {
@@ -44,6 +44,7 @@
 
 .menu {
   display: flex;
+  align-items: center;
   list-style-type: none;
   margin: 0;
   padding: 0;

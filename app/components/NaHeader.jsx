@@ -2,12 +2,12 @@
 
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { useSpring, animated } from 'react-spring';
+import { useSpring, animated, config } from 'react-spring';
 import styles from './NaHeader.module.css';
 import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
-const NaHeader = () => {
+const NaHeader = ({ showInitialHeader = true }) => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
@@ -21,33 +21,29 @@ const NaHeader = () => {
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
 
-  const initialHeaderAnimation = useSpring({
-    opacity: isScrolled ? 0 : 1,
-    transform: isScrolled ? 'translateY(-100%)' : 'translateY(0)',
-    config: { mass: 1, tension: 280, friction: 60 }
-  });
-
   const scrolledHeaderAnimation = useSpring({
-    opacity: isScrolled ? 1 : 0,
-    transform: isScrolled ? 'translateY(0)' : 'translateY(-100%)',
-    config: { mass: 1, tension: 280, friction: 60 }
+    opacity: isScrolled || !showInitialHeader ? 1 : 0,
+    transform: isScrolled || !showInitialHeader ? 'translateY(0)' : 'translateY(-100%)',
+    config: { ...config.molasses, duration: 1000 } // Smoother and slower animation
   });
 
   const isLinkActive = (href) => pathname === href;
 
   return (
     <>
-      <animated.header className={styles.initialHeader} style={initialHeaderAnimation}>
-        <Link href="/">
-          <Image 
-            src="/nautilus-logo-full.png" 
-            alt="Nautilus - Master Your Craft" 
-            width={300} 
-            height={100}
-            className={styles.fullLogo}
-          />
-        </Link>
-      </animated.header>
+      {showInitialHeader && (
+        <header className={styles.initialHeader}>
+          <Link href="/">
+            <Image 
+              src="/nautilus-logo-full.png" 
+              alt="Nautilus - Master Your Craft" 
+              width={300} 
+              height={100}
+              className={styles.fullLogo}
+            />
+          </Link>
+        </header>
+      )}
       
       <animated.header className={styles.scrolledHeader} style={scrolledHeaderAnimation}>
         <div className={styles.scrolledHeaderContent}>

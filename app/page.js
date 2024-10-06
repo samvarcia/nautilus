@@ -27,7 +27,7 @@ export default function Home() {
 
   return (
     <div className={styles.page}>
-      {showHeader && <NaHeader />}
+      {showHeader && <NaHeader showInitialHeader={false} />}
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
