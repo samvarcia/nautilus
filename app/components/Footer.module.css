@@ -43,3 +43,48 @@
 .logo {
     width: 100%;
 }
+
+/* Media Queries */
+@media (max-width: 1024px) {
+    .footerContent {
+        padding: 50px 2rem;
+    }
+    .leftFooter {
+        width: 40%;
+    }
+}
+
+@media (max-width: 768px) {
+    .footerTop {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .leftFooter {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+    .footerRight {
+        width: 100%;
+        align-items: flex-start;
+    }
+    .footerInput {
+        width: 100%;
+    }
+    .footerInput input,
+    .footerInput button {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .footerContent {
+        padding: 30px 1rem;
+    }
+    .leftFooter {
+        flex-direction: column;
+    }
+    .leftFooter > div:first-child {
+        margin-bottom: 20px;
+    }
+}
