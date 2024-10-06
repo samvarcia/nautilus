@@ -10,7 +10,7 @@ import NaHeader from "../components/NaHeader";
 export default function Program() {
   return (
     <>
-						<NaHeader/>
+		<NaHeader/>
 
     <div className={styles.page}>
         <div className={styles.ProgramContent}>

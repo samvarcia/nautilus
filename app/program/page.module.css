@@ -1,6 +1,7 @@
-.page{
+.page {
     margin-top: 3rem;
-  }
+}
+
 .ProgramContent {
     display: flex;
     flex-direction: column;
@@ -15,46 +16,126 @@
     letter-spacing: -0.1rem;
     margin: 4rem 0;
 }
+
 .sixHeader {
     margin-bottom: 2rem;
 }
 
-.sixHeader h1{
+.sixHeader h1 {
     font-family: var(--font-feature-display);
     font-weight: 700;
     font-size: 3.2rem;
     margin-bottom: 1.5rem;
 }
+
 .Six p {
     font-size: 1.3rem;
 }
+
 .sixHeader p, .ProgramDesc {
     font-size: 1.6rem;
 }
 
-.sixLayout{
+.sixLayout {
     display: flex;
     gap: 50px;
     margin: 2rem 0;
 }
+
 .one {
     margin-bottom: 2rem;
 }
+
 .sixText h3, .Six h3 {
     font-family: var(--font-feature-display);
     font-weight: 500;
     font-size: 2.3rem;
     margin-bottom: 20px;
 }
-.ProgramCTA{
+
+.ProgramCTA {
     margin: 3rem;
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
     gap: 100px;
 }
-.teen{
+
+.teen {
     width: 400px;
     height: auto;
+}
+
+@media (max-width: 1024px) {
+    .ProgramContent {
+        padding: 2rem 4rem;
+    }
+
+    .sixLayout {
+        flex-direction: column;
+    }
+
+    .ProgramCTA {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .teen {
+        width: 100%;
+        max-width: 400px;
+    }
+}
+
+@media (max-width: 768px) {
+    .ProgramContent {
+        padding: 1rem 2rem;
+    }
+
+    .ProgramTitle {
+        font-size: 3rem;
+        margin: 2rem 0;
+    }
+
+    .sixHeader h1 {
+        font-size: 2.5rem;
+    }
+
+    .Six p, .sixHeader p, .ProgramDesc {
+        font-size: 1.2rem;
+    }
+
+    .sixText h3, .Six h3 {
+        font-size: 2rem;
+    }
+
+    .ProgramCTA {
+        margin: 2rem 0;
+    }
+    .teen {
+        width: 70%;
+        /* max-width: 400px; */
+    }
+}
+
+@media (max-width: 480px) {
+    .ProgramContent {
+        padding: 1rem;
+    }
+
+    .ProgramTitle {
+        font-size: 2.5rem;
+    }
+
+    .sixHeader h1 {
+        font-size: 2rem;
+    }
+
+    .Six p, .sixHeader p, .ProgramDesc {
+        font-size: 1rem;
+    }
+
+    .sixText h3, .Six h3 {
+        font-size: 1.8rem;
+    }
 }

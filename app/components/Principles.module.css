@@ -50,32 +50,63 @@
     object-fit: cover;
   }
   
+  @media (max-width: 1024px) {
+    .content {
+      gap: 3rem;
+    }
+  
+    .imageContainer {
+      flex: 0 0 30%;
+    }
+  }
+  
   @media (max-width: 768px) {
+    .container {
+      margin: 4rem auto;
+    }
+  
     .content {
       flex-direction: column;
     }
   
     .imageContainer {
       width: 100%;
-      min-height: 300px;
+      min-height: 100vh;
       margin-bottom: 1.5rem;
     }
   
     .title {
       font-size: 2.5rem;
     }
+  
+    .principle h2 {
+      font-size: 2rem;
+    }
+  
+    .principle p {
+      font-size: 1.2rem;
+    }
   }
   
   @media (max-width: 480px) {
     .container {
       padding: 1rem;
+      margin: 2rem auto;
     }
   
     .title {
       font-size: 2rem;
     }
   
+    .principle h2 {
+      font-size: 1.8rem;
+    }
+  
+    .principle p {
+      font-size: 1rem;
+    }
+  
     .imageContainer {
-      min-height: 200px;
+      height: 100vh;
     }
   }

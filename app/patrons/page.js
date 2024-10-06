@@ -16,7 +16,7 @@ export default function Patrons() {
 									<div className={styles.patrons}>
 										<PatronProfileCard 
 											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
+											patronName="Danielle Strachman"  
 										/>
 										<PatronProfileCard 
 											imageSrc="/daniellesquare.png" 

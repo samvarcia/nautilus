@@ -2,16 +2,16 @@
     position: relative;
     width: 100%;
     min-width: 500px;
-    max-width: 42rem; /* Equivalent to max-w-2xl */
+    max-width: 42rem;
     margin: 0 auto;
     aspect-ratio: 16 / 9;
-  }
-  
-  .frameImage {
+}
+
+.frameImage {
     pointer-events: none;
-  }
-  
-  .content {
+}
+
+.content {
     position: absolute;
     inset: 0;
     display: flex;
@@ -20,43 +20,70 @@
     justify-content: center;
     text-align: center;
     padding: 2rem;
-  }
-  
-  .text {
-    font-size: 1.3rem!important; /* Equivalent to text-xl */
-    margin-bottom: 1.5rem;
-    /* max-width: 28rem; Equivalent to max-w-md */
-  }
-  .feature{
-    font-family: var(--font-feature-display);
+}
 
-  }
-  
-  .applyButton {
-    background-color: #02AF54; /* Tailwind's green-500 */
+.text {
+    font-size: 1.3rem !important;
+    margin-bottom: 1.5rem;
+}
+
+.feature {
+    font-family: var(--font-feature-display);
+}
+
+.applyButton {
+    background-color: #02AF54;
     color: white;
     padding: 0.5rem 3.5rem;
     border-radius: 0.375rem;
     border: none;
     font-size: 1.125rem;
     font-family: var(--font-feature-display);
-
     transition: background-color 0.3s ease;
     cursor: pointer;
+}
+
+.applyButton:hover {
+    background-color: #059669;
+}
+
+@media (max-width: 768px) {
+  .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 60%
   }
-  
-  .applyButton:hover {
-    background-color: #059669; /* Tailwind's green-600 */
-  }
-  
-  @media (max-width: 768px) {
-    .text {
-      font-size: 1.5rem; /* Equivalent to md:text-2xl */
+  .content {
+        /* min-width: unset; */
+        max-width: 80%;
     }
-  }
-  
-  /* @media (max-width: 1024px) {
+
     .text {
-      font-size: 1.875rem; 
+        font-size: 1.2rem !important;
     }
-  } */
+
+    .applyButton {
+        padding: 0.5rem 2.5rem;
+        font-size: 1rem;
+      }
+    }
+    
+    @media (max-width: 480px) {
+      .container {
+      width: 60%!important;
+    }
+
+    .content {
+        padding: 1rem;
+    }
+
+    .text {
+        font-size: 1rem !important;
+    }
+
+    .applyButton {
+        padding: 0.5rem 2rem;
+        font-size: 0.9rem;
+    }
+}

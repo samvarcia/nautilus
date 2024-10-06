@@ -7,7 +7,7 @@ const PatronProfileCard = ({ imageSrc, patronName }) => {
     <div className={styles.card}>
       <div className={styles.imageContainer}>
             <Image
-              src={imageSrc}
+              src={imageSrc} 
               alt={`Portrait of ${patronName}`}
             height={350}
             width={300}
