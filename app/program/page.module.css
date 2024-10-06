@@ -1,0 +1,60 @@
+.page{
+    margin-top: 3rem;
+  }
+.ProgramContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2rem 7rem;
+}
+
+.ProgramTitle {
+    font-size: clamp(2.5rem, 8vw, 5rem);
+    font-family: var(--font-feature-display);
+    font-weight: 900;
+    letter-spacing: -0.1rem;
+    margin: 4rem 0;
+}
+.sixHeader {
+    margin-bottom: 2rem;
+}
+
+.sixHeader h1{
+    font-family: var(--font-feature-display);
+    font-weight: 700;
+    font-size: 3.2rem;
+    margin-bottom: 1.5rem;
+}
+.Six p {
+    font-size: 1.3rem;
+}
+.sixHeader p, .ProgramDesc {
+    font-size: 1.6rem;
+}
+
+.sixLayout{
+    display: flex;
+    gap: 50px;
+    margin: 2rem 0;
+}
+.one {
+    margin-bottom: 2rem;
+}
+.sixText h3, .Six h3 {
+    font-family: var(--font-feature-display);
+    font-weight: 500;
+    font-size: 2.3rem;
+    margin-bottom: 20px;
+}
+.ProgramCTA{
+    margin: 3rem;
+    width: 100%;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    gap: 100px;
+}
+.teen{
+    width: 400px;
+    height: auto;
+}

@@ -1,0 +1,45 @@
+.frameContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.frame {
+  background-image: url('/Border.png');
+  background-repeat: no-repeat;
+  
+  background-size: contain;
+  width: 100%;
+  /* max-width: 600px; */
+  height: auto;
+  /* aspect-ratio: 1 / 1; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem;
+}
+
+.content {
+  text-align: left;
+  max-width: 80%;
+}
+
+.highlight {
+  font-family: var(--font-feature-display);
+  /* font-weight: 400; */
+}
+
+.learnMore {
+  background-color: #4CAF50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 4px;
+}

@@ -1,0 +1,129 @@
+.hero {
+  height: 100vh;
+  background-image: url('../public/herobg.png');
+  background-position: center;
+  background-size: cover;  
+  background-repeat: no-repeat;
+  color: var(--background);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  /* padding: 1rem; */
+  /* font-weight: 400; */
+}
+.feature {
+  font-family: var(--font-feature-display);
+  font-weight: 200;
+}
+
+.heroContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.heroText {
+  font-size: clamp(2.5rem, 4vw, 5rem);
+  line-height: 1.4;
+  margin-bottom: 2rem;
+  font-weight: 200;
+}
+
+.textLine {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.logoWrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  /* margin-top: 85px; */
+  margin-right: 0.5rem;
+  height: 67.2px;  /* Match the line height of the text */
+
+}
+
+.logoImage {
+  width: 210px;
+  height: auto;
+  object-fit: contain;
+  vertical-align: middle;  /* Align the image with the middle of the text */
+}
+
+.inlineImage {
+  object-fit: cover;
+  object-position: center;
+  vertical-align: middle;  /* Align the image with the middle of the text */
+
+}
+.container {
+  height: 200vh; 
+  border: 1px solid red;
+
+}
+
+.stickyContainer {
+  position: sticky;
+  top: 20vh;
+  border: 1px solid blue;
+  height: auto; /* Let it fit the content */
+  width: fit-content;
+
+}
+
+
+.applyButton {
+  background-color: #02AF54;
+  color: #272727;
+  border: none;
+  padding: 0.5rem 3.9rem;
+  font-size: 1.6rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-family: var(--font-feature-display);
+  font-weight: 400;
+  align-self: flex-end;
+}
+.applyButton:hover {
+  background-color: #008c59;
+}
+
+@media (max-width: 768px) {
+  .heroText {
+    font-size: clamp(1.2rem, 3vw, 2rem);
+  }
+  
+  .inlineImage {
+    width: 80px;
+    height: 48px;
+  }
+}
+
+@media (max-width: 480px) {
+  .heroText {
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+  }
+  
+  .inlineImage {
+    width: 60px;
+    height: 36px;
+  }
+}
+
+/* Enable hover only on non-touch devices */
+@media (hover: hover) and (pointer: fine) {
+  
+}
+
+@media (max-width: 600px) {
+  
+}

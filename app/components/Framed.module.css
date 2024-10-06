@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+    width: 100%;
+    min-width: 500px;
+    max-width: 42rem; /* Equivalent to max-w-2xl */
+    margin: 0 auto;
+    aspect-ratio: 16 / 9;
+  }
+  
+  .frameImage {
+    pointer-events: none;
+  }
+  
+  .content {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem;
+  }
+  
+  .text {
+    font-size: 1.3rem!important; /* Equivalent to text-xl */
+    margin-bottom: 1.5rem;
+    /* max-width: 28rem; Equivalent to max-w-md */
+  }
+  .feature{
+    font-family: var(--font-feature-display);
+
+  }
+  
+  .applyButton {
+    background-color: #02AF54; /* Tailwind's green-500 */
+    color: white;
+    padding: 0.5rem 3.5rem;
+    border-radius: 0.375rem;
+    border: none;
+    font-size: 1.125rem;
+    font-family: var(--font-feature-display);
+
+    transition: background-color 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .applyButton:hover {
+    background-color: #059669; /* Tailwind's green-600 */
+  }
+  
+  @media (max-width: 768px) {
+    .text {
+      font-size: 1.5rem; /* Equivalent to md:text-2xl */
+    }
+  }
+  
+  /* @media (max-width: 1024px) {
+    .text {
+      font-size: 1.875rem; 
+    }
+  } */
