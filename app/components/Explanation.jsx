@@ -17,7 +17,7 @@ const Explanation = () => {
         <div className={styles.cohortInfo}>
           <span className={styles.cohortText}>NEXT COHORT STARTS ON MARCH 1ST.  APPLY</span>
         </div>
-      </div>
+      </div> 
     </section>
   );
 };

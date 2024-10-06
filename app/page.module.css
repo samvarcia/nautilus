@@ -27,7 +27,7 @@
 }
 
 .heroText {
-  font-size: clamp(2.5rem, 4vw, 5rem);
+  font-size: 3.5rem;
   line-height: 1.4;
   margin-bottom: 2rem;
   font-weight: 200;
@@ -42,17 +42,16 @@
 }
 
 .logoWrapper {
-  display: inline-flex;
+  /* display: inline-flex; */
   align-items: center;
   justify-content: center;
   /* margin-top: 85px; */
   margin-right: 0.5rem;
   height: 67.2px;  /* Match the line height of the text */
-
 }
 
 .logoImage {
-  width: 210px;
+  width: 230px;
   height: auto;
   object-fit: contain;
   vertical-align: middle;  /* Align the image with the middle of the text */
@@ -69,7 +68,6 @@
   border: 1px solid red;
 
 }
-
 .stickyContainer {
   position: sticky;
   top: 20vh;
@@ -78,8 +76,6 @@
   width: fit-content;
 
 }
-
-
 .applyButton {
   background-color: #02AF54;
   color: #272727;
@@ -98,8 +94,20 @@
 }
 
 @media (max-width: 768px) {
+  .applyButton{
+    font-size: 1rem;
+    padding: 0.5rem 2.0rem;
+  }
+  .hero{
+    justify-content: flex-end;
+    padding-bottom: 2rem;
+  }
   .heroText {
-    font-size: clamp(1.2rem, 3vw, 2rem);
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  .logoImage{
+    max-width: 150px;
   }
   
   .inlineImage {
@@ -110,7 +118,8 @@
 
 @media (max-width: 480px) {
   .heroText {
-    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    font-size: 1.5rem;
+    line-height: 1.9;
   }
   
   .inlineImage {

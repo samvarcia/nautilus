@@ -9,7 +9,7 @@ const Protegees = () => {
       <div className={styles.container}>
         <div className={styles.grid}>
           <div className={styles.gridTop}>
-            <div className={styles.gridTopLeft}>
+            <div className={styles.gridTopLeft}> 
               <h1 className={styles.title}>Our proteges</h1>
               <div className={`${styles.item} ${styles.item1}`}>
                 <Image src="/b1.png" alt="Protege 1" width={600} height={200} className={styles.image} />

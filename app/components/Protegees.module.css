@@ -11,7 +11,7 @@
   letter-spacing: -0.18rem;
 }
 .grid{
-  /* border: 1px solid red; */
+  /* border: 1px solid red; / */
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,14 +28,10 @@
 .gridTop, .gridBottom{
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .gridTop{
-  /* border: 1px solid green; */
-  gap: 12rem;
-  /* width: 100%; */
-}
-.gridBottom{
-  /* border: 1px solid blue; */
+  gap: 6rem;
 }
 .item1{
   align-self: flex-end;
@@ -43,4 +39,49 @@
 }
 .item4{
   align-self: flex-end;
+}
+@media (max-width: 768px) {
+  .image{
+    width: 100%;
+  }
+  .protegesSection {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    text-align: left;
+  }
+
+  .grid {
+    gap: 2rem;
+  }
+
+  .gridTop,
+  .gridBottom {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .gridTopLeft {
+    align-items: flex-start;
+  }
+
+  .item1,
+  .item2,
+  .item3,
+  .item4 {
+    width: 100%;
+  }
+
+  .item1 {
+    align-self: center;
+    margin-bottom: 0;
+  }
+
+  .item4 {
+    align-self: center;
+  }
 }

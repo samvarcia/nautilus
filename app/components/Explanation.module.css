@@ -32,7 +32,7 @@
   }
   
   .supportText {
-    /* font-size: 1.1rem; */
+    font-size: 1.1rem;
     margin-bottom: 2rem;
   }
   
@@ -74,9 +74,17 @@
     .title {
       font-size: 2rem;
     }
-  
+  .description,   .supportText 
+    {
+    line-height: 1;
+
+  }
     .cohortInfo {
       flex-direction: column;
       gap: 1rem;
+    }
+    .cohortText{
+      line-height: 1;
+
     }
   }
