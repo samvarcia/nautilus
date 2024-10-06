@@ -1,15 +1,33 @@
+"use client"
+import { useState, useEffect } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Explanation from "./components/Explanation";
 import Program from "./components/Program";
 import Protegees from "./components/Protegees";
 import Patrons from "./components/Patrons";
-import Footer from './components/Footer'
-import ScrollAnimatedSpiral from "./components/ScrollAnimatedSpiral";
+import Footer from './components/Footer';
+import NaHeader from './components/NaHeader';
 
 export default function Home() {
+  const [showHeader, setShowHeader] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const mainSection = document.querySelector('main');
+      if (mainSection) {
+        const mainSectionBottom = mainSection.getBoundingClientRect().bottom;
+        setShowHeader(mainSectionBottom <= 0);
+      }
+    };
+
+    window.addEventListener('scroll', handleScroll);
+    return () => window.removeEventListener('scroll', handleScroll);
+  }, []);
+
   return (
     <div className={styles.page}>
+      {showHeader && <NaHeader />}
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
@@ -38,8 +56,7 @@ export default function Home() {
         </section>
       </main>
       <Explanation />
-      {/* <ScrollAnimatedSpiral /> */}
-      <div  className={styles.container}>
+      <div className={styles.container}>
         <div className={styles.stickyContainer}>
           <img
             src="/spiral-1.png"
