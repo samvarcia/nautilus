@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .protegesSection{
   padding: 4rem;
 
@@ -44,3 +45,119 @@
 .item4{
   align-self: flex-end;
 }
+=======
+.protegesSection {
+    padding: 4rem ;
+    /* background-color: #f8f6f1; */
+  }
+  
+  .title {
+    font-size: 3rem;
+    margin-bottom: 2rem;
+    color: #333;
+    font-family: var(--font-feature-display);
+    font-weight: bold;
+    letter-spacing: -0.18rem;
+  }
+  
+  .gallery {
+    display: grid;
+    grid-template-columns: repeat(10, 100px);
+    grid-template-rows: repeat(10, 100px);
+    gap: 3px;
+    max-width: 1200px;
+    margin: 0 auto;
+    border: 1px solid red;
+  }
+  
+  .frame {
+    position: relative;
+    overflow: hidden;
+    /* padding: 30px; */
+  }
+  
+  /* .frame::before {
+    content: "";
+    display: block;
+    /* padding-top: 100%; 1:1 Aspect Ratio */
+  
+  
+  .frame1 {
+    grid-column: 2 / 5;
+    grid-row: 3;
+  }
+  
+  .frame1::before {
+    padding-top: 56.25%; /* 16:9 Aspect Ratio */
+  }
+  
+  .frame2 {
+    grid-column: 4;
+    grid-row: 1 / 3;
+  }
+  
+  .frame2::before {
+    padding-top: 200%; /* 1:2 Aspect Ratio */
+  }
+  
+  .frame3 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+  
+  .textFrame {
+    grid-column: 5 / 9;
+    grid-row: 5;
+    background-image: url('/BORDER1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .textContent {
+    text-align: left;
+    color: #333;
+  }
+  
+  .textContent p {
+    margin-bottom: 0.5rem;
+    font-size: 0.9rem;
+  }
+  
+  .learnMore {
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+  }
+  
+  .learnMore:hover {
+    background-color: #45a049;
+  }
+  
+  @media (max-width: 768px) {
+    .gallery {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, auto);
+    }
+  
+    .frame1, .frame2, .frame3, .textFrame {
+      grid-column: 1;
+    }
+  
+    .frame1 { grid-row: 1; }
+    .frame2 { 
+      grid-row: 2;
+      aspect-ratio: 1 / 1;
+    }
+    .frame3 { grid-row: 3; }
+    .textFrame { grid-row: 4; }
+  }
+>>>>>>> 9a406c75dc26638167390b7007d7b4ac5f49abdf
