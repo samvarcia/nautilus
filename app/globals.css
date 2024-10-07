@@ -2,6 +2,8 @@
   --background: #F8F4EC;
   --foreground: #272727;
   --cream: #E5D3B3;
+  /* --font-feature-display: var(--font-feature-display);
+  --font-pp-montreal-neue: var(--font-pp-montreal-neue); */
 }
 
 
@@ -10,12 +12,13 @@ html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
+  font-family: var(--font-pp-montreal-neue), sans-serif;
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-pp-montreal-neue);
+  font-family: var(--font-pp-montreal-neue), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

@@ -30,7 +30,7 @@ const featureDisplay = localFont({
     },
   ],
   variable: '--font-feature-display',
-  display: 'swap'
+  display: 'swap',
 });
 
 const ppMontrealNeue = localFont({
@@ -47,20 +47,18 @@ const ppMontrealNeue = localFont({
     },
   ],
   variable: '--font-pp-montreal-neue',
+  display: 'swap',
 });
 
 export const metadata = {
   title: "Nautilus",
   description: "Master Your Craft",
-  display: 'swap'
 };
 
 export default function RootLayout({ children }) {
   return (
-    <html lang="en">
-      <body className={`${featureDisplay.variable} ${ppMontrealNeue.variable}`}>
-        {children}
-      </body>
+    <html lang="en" className={`${featureDisplay.variable} ${ppMontrealNeue.variable}`}>
+      <body>{children}</body>
     </html>
   );
 }

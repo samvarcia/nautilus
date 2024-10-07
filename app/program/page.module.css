@@ -67,6 +67,13 @@
     height: auto;
 }
 
+/* Responsive styles */
+@media (max-width: 1200px) {
+    .ProgramContent {
+        padding: 2rem 8rem;
+    }
+}
+
 @media (max-width: 1024px) {
     .ProgramContent {
         padding: 2rem 4rem;
@@ -91,6 +98,13 @@
     .ProgramContent {
         padding: 1rem 2rem;
     }
+    .Six{
+        max-width: 90%;
+    }
+    .image{
+        width: 100%;
+        height: auto;
+    }
 
     .ProgramTitle {
         font-size: 3rem;
@@ -111,10 +125,6 @@
 
     .ProgramCTA {
         margin: 2rem 0;
-    }
-    .teen {
-        width: 70%;
-        /* max-width: 400px; */
     }
 }
 
@@ -137,5 +147,9 @@
 
     .sixText h3, .Six h3 {
         font-size: 1.8rem;
+    }
+
+    .teen {
+        width: 100%;
     }
 }

@@ -59,7 +59,7 @@
 
 .thirdParagraph img {
     width: 100%;
-    max-width: 90%;
+    /* max-width: 90%; */
     height: auto;
 }
 
@@ -74,6 +74,9 @@
 }
 
 @media (max-width: 768px) {
+    .manifestoContent{
+        padding: 1rem;
+    }
     .text {
         width: 100%;
     }
