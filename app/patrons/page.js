@@ -15,36 +15,16 @@ export default function Patrons() {
 						<p>Our patrons are the Medicis of the 21st Century. Prominent intellectuals, artists, founders or investors, they are taking action towards a brighter world by supporting the talents of Nautilus. </p>
 									<div className={styles.patrons}>
 										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman"  
+											imageSrc="/1517FundProfile.png" 
+											patronName="1517 Fund"  
 										/>
 										<PatronProfileCard 
 											imageSrc="/daniellesquare.png" 
 											patronName="Danielle Strachman" 
 										/>
 										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
-										/>
-										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
-										/>
-										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
-										/>
-										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
-										/>
-										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
-										/>
-										<PatronProfileCard 
-											imageSrc="/daniellesquare.png" 
-											patronName="Danielle Strachman" 
+											imageSrc="/TylerCowenProfile.png" 
+											patronName="Tyler Cowen" 
 										/>
 									</div>
 						<div className={styles.becomeContainer}>
