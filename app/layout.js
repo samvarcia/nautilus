@@ -30,7 +30,8 @@ const featureDisplay = localFont({
     },
   ],
   variable: '--font-feature-display',
-  display: 'swap',
+
+
 });
 
 const ppMontrealNeue = localFont({
@@ -47,7 +48,7 @@ const ppMontrealNeue = localFont({
     },
   ],
   variable: '--font-pp-montreal-neue',
-  display: 'swap',
+
 });
 
 export const metadata = {

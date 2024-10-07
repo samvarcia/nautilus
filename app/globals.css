@@ -1,24 +1,79 @@
+/* globals.css */
+
+@font-face {
+  font-family: 'Feature Display';
+  src: url('./fonts/FEATUREDISPLAY-EXTRALIGHT-TRIAL.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Feature Display';
+  src: url('./fonts/FEATUREDISPLAY-REGULAR-TRIAL.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Feature Display';
+  src: url('./fonts/FEATUREDISPLAY-MEDIUM-TRIAL.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Feature Display';
+  src: url('./fonts/FEATUREDISPLAY-BOLD-TRIAL.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Feature Display';
+  src: url('./fonts/FEATUREDISPLAY-ULTRA-TRIAL.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./fonts/PPNEUEMONTREAL-BOOK.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'PP Neue Montreal';
+  src: url('./fonts/PPNEUEMONTREAL-THIN.woff') format('woff');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   --background: #F8F4EC;
   --foreground: #272727;
   --cream: #E5D3B3;
-  /* --font-feature-display: var(--font-feature-display);
-  --font-pp-montreal-neue: var(--font-pp-montreal-neue); */
+  --font-feature-display: 'Feature Display', sans-serif;
+  --font-pp-montreal-neue: 'PP Neue Montreal', sans-serif;
 }
-
-
 
 html,
 body {
   max-width: 100vw;
   overflow-x: hidden;
-  font-family: var(--font-pp-montreal-neue), sans-serif;
+  font-family: var(--font-pp-montreal-neue);
 }
 
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: var(--font-pp-montreal-neue), sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
