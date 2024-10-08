@@ -17,6 +17,7 @@
 
 .frameImage {
     pointer-events: none;
+    object-fit: cover;
 }
 
 .content {
@@ -27,17 +28,18 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    padding: 2rem;
+    /* padding: 2.4rem; */
     width: 100%;
     max-width: 80%;
 }
 
 .text {
     font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
-    margin-bottom: 1.5rem;
+    margin-bottom: 0.5rem;
+    margin-top: 0;
 }
 
-.feature {
+.feature { 
     font-family: var(--font-feature-display);
 }
 
