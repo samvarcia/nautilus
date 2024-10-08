@@ -60,7 +60,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${featureDisplay.variable} ${ppMontrealNeue.variable}`}>
       <head>
-        <link rel="icon" href="./icon.ico" type="image/x-icon" sizes="16x16"/>
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" sizes="16x16"/>
       </head>
       <body>{children}</body>
     </html>
