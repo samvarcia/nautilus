@@ -42,8 +42,8 @@ export default function Faq() {
 								<p>We are interested in backing people crafting across fields, from art, to science, social technology, entrepreneurship, deep tech, literature… You name it, anything!</p>
 							</div>
 							<div className={styles.faqText}>
-								<h3>Can I be attending school or working a job during the program?</h3>
-								<p>Nope, we want you all in. Dropout or take a gap year!</p>
+								<h3>Is it ok if I’m from outside the US?</h3>
+								<p>Yes, we’ll help you get a short term visa for the first half of the program.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>How many protégés do you select??</h3>
