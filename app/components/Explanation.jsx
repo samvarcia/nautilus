@@ -1,4 +1,5 @@
 import styles from './Explanation.module.css';
+import Link from 'next/link';
 
 const Explanation = () => {
   return (
@@ -15,7 +16,12 @@ const Explanation = () => {
           Through it all, we support you to make the most out of this experience.
         </p>
         <div className={styles.cohortInfo}>
-          <span className={styles.cohortText}>NEXT COHORT STARTS ON MARCH 1ST.  APPLY</span>
+          <span className={styles.cohortText}>NEXT COHORT STARTS ON MARCH 1ST.               <Link 
+                  href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                  target='_blank'
+                >
+                APPLY. 
+              </Link></span>
         </div>
       </div> 
     </section>

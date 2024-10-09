@@ -48,7 +48,9 @@
     font-weight: bold;
     font-weight: 500; /* Ultra weight */
     font-family: var(--font-feature-display);
-
+  }
+  .cohortText a {
+    text-decoration: underline;
   }
   
   .applyButton {
