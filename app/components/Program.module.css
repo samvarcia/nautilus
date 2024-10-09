@@ -30,7 +30,7 @@
 .textContent {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 3rem;
 }
 
 .column {
@@ -55,7 +55,7 @@
 
 .subtitle {
   font-size: 2rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 0.2rem;
   font-family: var(--font-feature-display);
   font-weight: 500;
 }
@@ -74,7 +74,7 @@
   margin-bottom: 0.5rem;
   position: relative;
   padding-left: 1rem;
-  font-size: 1rem;
+  font-size: 1.2rem;
 }
 
 .list li::before {

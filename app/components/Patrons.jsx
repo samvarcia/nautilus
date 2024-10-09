@@ -21,6 +21,10 @@ const Patrons = () => {
               patronName="Danielle Strachman" 
             />
             <PatronProfileCard 
+              imageSrc="/PatrickRodriguez.png" 
+              patronName="Patrick Rodriguez" 
+            />
+            <PatronProfileCard 
               imageSrc="/1517Fund.png" 
               patronName="1517 Fund" 
             />
