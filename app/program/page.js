@@ -41,6 +41,13 @@ export default function Program() {
 										<h3>Onto your own Odyssey</h3>
 										<p>In the second half of the program, you’ll navigate mostly on your own. We’ll still sync up weekly, but the journey is yours to shape—whether that means traveling, heading back home, or exploring new paths as you continue your projects.</p>
 									</div>
+									<Image
+										src="/future.png"
+										alt="People looking at clouds"
+										width={400}
+										height={600}
+										className={styles.image2}
+									/>
 								</div>
 							</div>
 							<h3>Create the tale of your quest</h3>

@@ -3,13 +3,12 @@
 }
 
 .title {
-  font-size: 3rem;
   margin-top: 8rem;
   text-align: left;
   font-family: var(--font-feature-display);
   font-weight: bold;
   letter-spacing: -0.18rem;
-}
+  font-size: 3.2rem;}
 
 .grid {
   display: flex;

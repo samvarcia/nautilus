@@ -8,6 +8,7 @@ import Protegees from "./components/Protegees";
 import Patrons from "./components/Patrons";
 import Footer from './components/Footer';
 import NaHeaderAlt from './components/NaHeaderAlt';
+import Link from "next/link";
 
 export default function Home() {
   const [showHeader, setShowHeader] = useState(false);
@@ -51,7 +52,15 @@ export default function Home() {
                 in complete freedom.
               </span>
             </h1>
-            <button className={styles.applyButton}>Apply</button>
+            <button className={styles.applyButton}>
+              <Link 
+                  href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                  target='_blank'
+                >
+                Apply
+                  
+                </Link>
+            </button>
           </div>
         </section>
       </main>

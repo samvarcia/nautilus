@@ -12,7 +12,7 @@ const Footer = () => {
                 <div className="">
                     <nav>
                         <ul className="">
-                            <li><Link                  href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                            <li><Link href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
                   target='_blank' className="">Apply</Link></li>
                             <li><Link href="/program" className="">About the program</Link></li>
                             <li><Link href="/faq" className="">FAQ</Link></li>
