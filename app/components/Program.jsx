@@ -12,29 +12,31 @@ const Program = () => {
         get intense with your craft.
       </p>
       <div className={styles.contentWrapper}>
-        <div className={styles.column1}>
-          <h3 className={styles.subtitle}>First 3 months:</h3>
-          <p className={styles.description}>Life at the Casa Nautilus</p>
-          <ul className={styles.list}>
-            <li>Kickoff</li>
-            <li>Find yourself a rhythm</li>
-            <li>Immerse yourself into your craft</li>
-            <li>Teach your peers and be taught</li>
-            <li>Celebration banquet</li>
-          </ul>
-        </div>
         <div className={styles.spiralWrapper}>
           <Image src="/full.png" alt="Program spiral" width={300} height={300} className={styles.spiralImage} />
         </div>
-        <div className={styles.column3}>
-          <h3 className={styles.subtitle}>Last 3 months:</h3>
-          <p className={styles.description}>Your own quest</p>
-          <ul className={styles.list}>
-            <li>Dive into a new adventure</li>
-            <li>Weekly online check-ins</li>
-            <li>Deliver the documentation of your experience</li>
-            <li>Closing ceremony</li>
-          </ul>
+        <div className={styles.textContent}>
+          <div className={styles.column1}>
+            <h3 className={styles.subtitle}>First 3 months:</h3>
+            <p className={styles.description}>Life at the Casa Nautilus</p>
+            <ul className={styles.list}>
+              <li>Kickoff</li>
+              <li>Find yourself a rhythm</li>
+              <li>Immerse yourself into your craft</li>
+              <li>Teach your peers and be taught</li>
+              <li>Celebration banquet</li>
+            </ul>
+          </div>
+          <div className={styles.column3}>
+            <h3 className={styles.subtitle}>Last 3 months:</h3>
+            <p className={styles.description}>Your own quest</p>
+            <ul className={styles.list}>
+              <li>Dive into a new adventure</li>
+              <li>Weekly online check-ins</li>
+              <li>Deliver the documentation of your experience</li>
+              <li>Closing ceremony</li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
