@@ -41,7 +41,7 @@ export default function Home() {
                 <span className={styles.feature}>
                 explore
                 </span>
-                <Image src="/house.png" alt="Explore" width={150} height={80} className={styles.inlineImage} />
+                <Image src="/explore.png" alt="Explore" width={150} height={80} className={styles.inlineImage} />
                 , <span className={styles.feature}>learn</span> 
                 <Image src="/image3.png" alt="Learn" width={150} height={80} className={styles.inlineImage} />
                 and <br />
@@ -57,9 +57,8 @@ export default function Home() {
                   href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
                   target='_blank'
                 >
-                Apply
-                  
-                </Link>
+                Apply 
+              </Link>
             </button>
           </div>
         </section>
