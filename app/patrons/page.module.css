@@ -19,7 +19,7 @@
 }
 
 .PatronsContent p, .becomeContainer p {
-  font-size: 1.8rem;
+  font-size: var(--bodytext);
 }
 
 .last {
@@ -47,8 +47,8 @@
 .becomeContainer h3 {
   font-family: var(--font-feature-display);
   font-weight: 700;
-  letter-spacing: -0.18rem;
-  font-size: 3.2rem;
+  font-size: var(--sectiontitle);
+  letter-spacing: var(--titlespacing);
   margin-bottom: 20px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .text {
-  font-size: 1.4rem !important;
+  font-size: var(--bodytext) !important;
   margin: 0;
 }
 

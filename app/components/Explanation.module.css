@@ -19,20 +19,20 @@
   }
   
   .title {
-    font-size: 2.3rem;
+    font-size: var(--subtitle);
     margin-bottom: 1.5rem;
     font-family: var(--font-feature-display);
     font-weight: 500; 
   }
   
   .description {
-    font-size: 1.1rem;
-    line-height: 1.6;
+    font-size: var(--bodytext);
+    line-height: 1.2;
     margin-bottom: 1.5rem;
   }
   
   .supportText {
-    font-size: 1.1rem;
+    font-size: var(--bodytext);
     margin-bottom: 2rem;
   }
   
@@ -44,7 +44,7 @@
   }
   
   .cohortText {
-    font-size: 2.3rem;
+    font-size: var(--subtitle);
     font-weight: bold;
     font-weight: 500; /* Ultra weight */
     font-family: var(--font-feature-display);

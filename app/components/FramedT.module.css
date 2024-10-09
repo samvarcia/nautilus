@@ -38,7 +38,7 @@
 }
 
 .content p {
-  font-size: 1.4rem;
+  font-size: var(--bodytext);
   /* margin-bottom: 1rem; */
   line-height: 1.4;
 }

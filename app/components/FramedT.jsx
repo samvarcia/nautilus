@@ -18,7 +18,7 @@ const FramedT = () => {
             </p>
           </div>
           <button className={styles.learnMore}>
-            <Link                   href="/program" 
+            <Link href="/program" 
             >
               Learn More
             </Link>

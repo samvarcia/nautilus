@@ -54,20 +54,19 @@ export default function Program() {
 									/> */}
 								</div>
 							</div>
-							<h3>Create the tale of your quest</h3>
-							<p>Throughout the program, you will document your experience, capturing the essence of your growth and discoveries. At the end of six months, you’ll present it in any format you choose, creating a lasting reflection of this transformative chapter—something to look back on for years to come.</p>
+						
 						</div>
 						<div className={styles.ProgramCTA}>
 							<div className={styles.cta}>
 								<Framed />
 							</div>
-							<Image
+							{/* <Image
 									src="/program2.png"
 									alt="TEEN"
 									width={600}
 									height={740}
 									className={styles.teen}
-								/>
+								/> */}
 						</div>
         </div>	
       <Footer />

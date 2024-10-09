@@ -34,13 +34,14 @@
 }
 
 .text {
-    font-size: clamp(1rem, 2.5vw, 1.3rem) !important;
-    margin-bottom: 0.5rem;
+    font-size: clamp(1rem, 2.5vw, 1.4rem) !important;
+    margin-bottom: 1rem;
     margin-top: 0;
 }
 
 .feature { 
     font-family: var(--font-feature-display);
+    font-weight: 500;
 }
 
 .applyButton {

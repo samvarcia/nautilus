@@ -9,7 +9,8 @@
   .title {
     font-family: var(--font-feature-display);
     font-weight: 700;
-    font-size: 3rem;
+    font-size: var(--sectiontitle);
+    letter-spacing: var(--titlespacing);
     margin-bottom: 3.3rem;
   }
   
@@ -29,14 +30,15 @@
   .principle h2 {
     font-family: var(--font-feature-display);
     font-weight: 500;
-    font-size: 2.3rem;
+    font-size: var(--subtitle);
+    /* letter-spacing: var(--titlespacing); */
     margin-bottom: 20px;
   }
   
   
   .principle p {
-    font-size: 1.4rem;
-    line-height: 1.4;
+    font-size: var(--bodytext);
+    /* line-height: 1.4; */
   }
   
   .imageContainer {

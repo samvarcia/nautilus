@@ -34,12 +34,12 @@
   .faqText h3 {
     font-family: var(--font-feature-display);
     font-weight: 700;
-    font-size: 2.3rem;
+    font-size: var(--subtitle);
     margin-bottom: 20px;
   }
   
   .faqText p {
-    font-size: 1.2rem;
+    font-size: var(--bodytext);
   }
   
   @media (max-width: 1200px) {
