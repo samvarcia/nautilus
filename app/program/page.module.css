@@ -41,11 +41,12 @@
 
 .sixLayout {
     display: flex;
+    align-items: center;
     gap: 50px;
     margin: 2rem 0;
 }
 
-.one {
+.sixText div {
     margin-bottom: 2rem;
 }
 

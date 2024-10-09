@@ -41,6 +41,10 @@ export default function Program() {
 										<h3>Onto your own Odyssey</h3>
 										<p>In the second half of the program, you’ll navigate mostly on your own. We’ll still sync up weekly, but the journey is yours to shape—whether that means traveling, heading back home, or exploring new paths as you continue your projects.</p>
 									</div>
+									<div>
+										<h3>Create the tale of your quest</h3>
+										<p>Throughout the program, you will document your experience, capturing the essence of your growth and discoveries. At the end of six months, you’ll present it in any format you choose, creating a lasting reflection of this transformative chapter—something to look back on for years to come.</p>
+									</div>
 									{/* <Image
 										src="/future.png"
 										alt="People looking at clouds"
