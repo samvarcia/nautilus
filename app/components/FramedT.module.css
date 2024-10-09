@@ -2,13 +2,13 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  min-height: 50vh;
-  padding: 1rem;
+  /* min-height: 50vh; */
+  /* padding: 1rem; */
 }
 
 .frame {
   max-width: 600px;
-  width: 100%;
+  width: 90%;
   aspect-ratio: 1 / 1;
   background-image: url('/Border.png');
   background-size: 100% 100%;
@@ -16,7 +16,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 2rem;
+  /* padding: 2rem; */
 }
 
 .content {
@@ -29,7 +29,7 @@
 }
 
 .text {
-  margin-bottom: 2rem;
+  margin-bottom: 1rem;
 }
 
 .highlight {
@@ -38,8 +38,8 @@
 }
 
 .content p {
-  font-size: clamp(1rem, 2.5vw, 1.4rem);
-  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  /* margin-bottom: 1rem; */
   line-height: 1.4;
 }
 
@@ -47,8 +47,8 @@
   background-color: #02AF54;
   color: #F8F4EC;
   border: none;
-  padding: 0.5rem 2rem;
-  font-size: clamp(1rem, 2.5vw, 1.7rem);
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
   border-radius: 4px;
   cursor: pointer;
   transition: background-color 0.3s ease;
