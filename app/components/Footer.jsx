@@ -31,7 +31,7 @@ const Footer = () => {
             </div>
             <div className={styles.footerRight}>
                 <p className="">&copy; Nautilus Quest - 2024, all rights reserved</p>
-                <form
+                {/* <form
                     action="https://gmail.us22.list-manage.com/subscribe/post?u=3469c3c8b23cbc4638376dfcd&amp;id=7fd3f614d5&amp;f_id=00acd7e1f0"
                     method="post"
                     id="mc-embedded-subscribe-form"
@@ -41,23 +41,23 @@ const Footer = () => {
                     >
                     <div id="mc_embed_signup_scroll">
                         <div className={styles.inputWrapper}>
-                        <input
-                            type="email"
-                            name="EMAIL"
-                            className={`required email ${styles.emailInput}`}
-                            id="mce-EMAIL"
-                            required
-                            placeholder="Your email address"
-                        />
-                        <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
-                            <input type="text" name="b_3469c3c8b23cbc4638376dfcd_7fd3f614d5" tabIndex="-1" value="" />
-                        </div>
-                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribeButton}>
-                            Subscribe
-                        </button>
+                          <input
+                              type="email"
+                              name="EMAIL"
+                              className={`required email ${styles.emailInput}`}
+                              id="mce-EMAIL"
+                              required
+                              placeholder="Your email address"
+                          />
+                          <div style={{ position: 'absolute', left: '-5000px' }} aria-hidden="true">
+                              <input type="text" name="b_3469c3c8b23cbc4638376dfcd_7fd3f614d5" tabIndex="-1" value="" />
+                          </div>
+                          <button type="submit" name="subscribe" id="mc-embedded-subscribe" className={styles.subscribeButton}>
+                              Subscribe
+                          </button>
                         </div>
                     </div>
-                    </form>
+                </form> */}
             </div>
         </div>
         <div className={styles.footerBottom}>

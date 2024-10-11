@@ -20,7 +20,7 @@ export default function Manifesto() {
 							<div className={styles.text}>
 								<h2 className={styles.paraSub}>School has stolen your childhood</h2>
 								<p>You were born a creative genius, eager to explore and learn.</p>
-								<p>You deserved an infancy made of adventures driven by curiosity.</p>
+								<p>You deserved a childhood made of adventures driven by curiosity.</p>
 								<p>Instead, they made you sit and shut in a classroom, draining your spirit and stripping your agency.</p>
 								<p>They labeled you Inadequate, Agitated, ADHD, Disruptive, Too much, Special needs, Daydreamer, Lazy, Troublemaker, Problematic, or Autistic.</p>
 							</div>

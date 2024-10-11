@@ -2,8 +2,10 @@
     /* max-width: 1000px; */
     margin: 8rem auto;
     /* padding: 2rem; */
+    /* border: 1px solid blue; */
     /* font-family: serif; */
     /* background-color: #f5f5f5; */
+    height: 100%;
   }
   
   .title {
@@ -16,6 +18,8 @@
   
   .content {
     display: flex;
+    /* justify-content: space-evenly; */
+    /* border: 1px solid red; */
     gap: 5.5rem;
   }
   
@@ -42,14 +46,15 @@
   }
   
   .imageContainer {
-    flex: 0 0 20%;
+    flex: 0 0 35%;
     position: relative;
-    height: auto;
-    min-height: 700px;
+    /* max-height: 40%; */
+    /* min-height: 900px; */
+    width: 100%;
   }
   
   .image {
-    object-fit: cover;
+    object-fit: contain;
   }
   
   @media (max-width: 1024px) {

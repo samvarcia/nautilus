@@ -7,7 +7,7 @@ const Principles = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <div className={styles.principles}>
-      <h1 className={styles.title}>Our principles</h1>
+          <h1 className={styles.title}>Our principles</h1>
           <div className={styles.principle}>
             <h2>1. Sick of your reality? Create a new one.</h2>
             <p>We are people with high agency who believe that life is malleable. We are the optimistic, the problem solvers, the early adopters of this world.</p>
@@ -30,7 +30,7 @@ const Principles = () => {
             src="/clouds.png"
             alt="People looking at clouds"
             fill
-            sizes="(max-width: 768px) 100vw, 50vw"
+            // sizes="(max-width: 768px) 100vw, 50vw"
             className={styles.image}
           />
         </div>

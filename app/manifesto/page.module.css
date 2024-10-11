@@ -65,7 +65,7 @@
 
 .firstParagraph img, .secondParagraph img, .fourthParagraph img {
     width: 100%;
-    max-width: 350px;
+    max-width: 450px;
     height: auto;
     margin: 1rem 0;
 }
