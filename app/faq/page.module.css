@@ -37,6 +37,9 @@
     font-size: var(--subtitle);
     margin-bottom: 20px;
   }
+  .faqText a {
+    text-decoration: underline;
+  }
   
   .faqText p {
     font-size: var(--bodytext);

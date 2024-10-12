@@ -30,7 +30,7 @@ export default function Faq() {
 								<p>Nope, we want you all in. Dropout or take a gap year!</p>
 							</div>
 							<div className={styles.faqText}>
-								<h3>How many protégés do you select?</h3>
+								<h3>How many protégés do you select??</h3>
 								<p>We select between 5 and 10 protégés (our grantees) per cohort.</p>
 							</div>
 							<div className={styles.faqText}>
@@ -46,8 +46,8 @@ export default function Faq() {
 								<p>Yes, we’ll help you get a short term visa for the first half of the program.</p>
 							</div>
 							<div className={styles.faqText}>
-								<h3>How many protégés do you select??</h3>
-								<p>We select between 5 and 10 protégés (our grantees) per cohort.</p>
+								<h3>What is the selection process like?</h3>
+								<p><a href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" target="_blank">Fill this form</a> and we’ll be in touch with you within a week of applying.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>Do you take equity?</h3>
