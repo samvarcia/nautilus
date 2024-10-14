@@ -5,7 +5,7 @@ import styles from './Framed.module.css';
 const Framed = () => {
   return (
     <div className={styles.container}>
-      <Image
+      <Image 
         src="/program1.png"
         alt="Decorative frame"
         layout="fill"
