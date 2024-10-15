@@ -30,6 +30,7 @@
 
 .image {
   height: auto;
+  /* width: 70%; */
 }
 
 .gridTop, .gridBottom {

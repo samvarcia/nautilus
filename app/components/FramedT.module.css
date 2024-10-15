@@ -8,7 +8,7 @@
 
 .frame {
   max-width: 600px;
-  width: 90%;
+  width: 70%;
   aspect-ratio: 1 / 1;
   background-image: url('/Border.png');
   background-size: 100% 100%;
@@ -38,9 +38,9 @@
 }
 
 .content p {
-  font-size: var(--bodytext);
+  font-size: 1.3rem;
   /* margin-bottom: 1rem; */
-  line-height: 1.4;
+  /* line-height: 1.4; */
 }
 
 .learnMore {
