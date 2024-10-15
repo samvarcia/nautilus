@@ -1,22 +1,36 @@
 .stickySection {
-  height: 500vh; /* Adjust this value to control the scroll length */
+  height: 300vh; /* Adjust based on your needs */
+  position: relative;
 }
 
-.stickyContainer {
+.contentContainer {
   position: sticky;
   top: 0;
   height: 100vh;
-  overflow: hidden;
+  display: flex;
+  align-items: center;
 }
 
 .imageContainer {
-  position: relative;
-  width: 100%;
+  width: 50%;
   height: 100%;
+  position: relative;
+}
+
+.textContainer {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.textSection {
+  position: absolute;
+  width: 100%;
+  transition: opacity 0.3s ease;
 }
 
 .sequenceImage {
   object-fit: contain;
-  max-width: 300px;
-  height: auto;
 }
