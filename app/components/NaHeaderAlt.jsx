@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useCallback } from 'react';
 import Image from 'next/image';
 import { useSpring, animated } from 'react-spring';
 import styles from './NaHeaderAlt.module.css';
@@ -12,32 +12,26 @@ const NaHeader = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  useEffect(() => {
-    const handleScroll = () => {
-      setIsScrolled(window.scrollY > 100);
-    };
+  // const handleScroll = useCallback(() => {
+  //   setIsScrolled(window.scrollY > 100);
+  // }, []);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [handleScroll]);
 
-  const initialHeaderAnimation = useSpring({
-    opacity: isScrolled ? 0 : 1,
-    transform: isScrolled ? 'translateY(-100%)' : 'translateY(0)',
-    config: { mass: 1, tension: 280, friction: 60 }
-  });
-
-  const scrolledHeaderAnimation = useSpring({
-    opacity: isScrolled ? 1 : 0,
-    transform: isScrolled ? 'translateY(0)' : 'translateY(-100%)',
-    config: { mass: 1, tension: 280, friction: 60 }
-  });
+  // const headerAnimation = useSpring({
+  //   opacity: isScrolled ? 1 : 0,
+  //   transform: isScrolled ? 'translateY(0)' : 'translateY(-100%)',
+  //   config: { mass: 1, tension: 280, friction: 60 }
+  // });
 
   const isLinkActive = (href) => pathname === href;
 
   return (
     <>
-      <animated.header className={styles.scrolledHeader} style={scrolledHeaderAnimation}>
+      <animated.header className={styles.scrolledHeader}>
         <div className={styles.scrolledHeaderContent}>
           <Link href="/">
             <Image 

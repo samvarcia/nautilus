@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react';
+import React, { useEffect, useRef, useState, useCallback } from 'react';
 import Image from 'next/image';
 import styles from './Sticky.module.css';
 
@@ -11,7 +11,7 @@ const Sticky = () => {
   const sectionRef = useRef(null);
   const requestRef = useRef();
 
-  const animate = () => {
+  const animate = useCallback(() => {
     if (sectionRef.current) {
       const { top, height } = sectionRef.current.getBoundingClientRect();
       const scrollPercentage = Math.max(0, Math.min(1, -top / (height - window.innerHeight)));
@@ -36,12 +36,12 @@ const Sticky = () => {
       }
     }
     requestRef.current = requestAnimationFrame(animate);
-  };
+  }, []);
 
   useEffect(() => {
     requestRef.current = requestAnimationFrame(animate);
     return () => cancelAnimationFrame(requestRef.current);
-  }, []);
+  }, [animate]);
 
   return (
     <section className={styles.programSection}>

@@ -1,5 +1,5 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Explanation from "./components/Explanation";
@@ -11,24 +11,22 @@ import NaHeaderAlt from './components/NaHeaderAlt';
 import Link from "next/link";
 
 export default function Home() {
-  const [showHeader, setShowHeader] = useState(false);
+  // const [showHeader, setShowHeader] = useState(false);
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const mainSection = document.querySelector('main');
-      if (mainSection) {
-        const mainSectionBottom = mainSection.getBoundingClientRect().bottom;
-        setShowHeader(mainSectionBottom <= 0);
-      }
-    };
+  // const handleScroll = useCallback(() => {
+  //   const scrollPosition = window.scrollY;
+  //   const scrollThreshold = 100;
+  //   setShowHeader(scrollPosition > scrollThreshold);
+  // }, []);
 
-    window.addEventListener('scroll', handleScroll);
-    return () => window.removeEventListener('scroll', handleScroll);
-  }, []);
+  // useEffect(() => {
+  //   window.addEventListener('scroll', handleScroll);
+  //   return () => window.removeEventListener('scroll', handleScroll);
+  // }, [handleScroll]);
 
   return (
     <div className={styles.page}>
-      {showHeader && <NaHeaderAlt  />}
+      <NaHeaderAlt  />
       <main>
         <section className={styles.hero}>
           <div className={styles.heroContent}>
