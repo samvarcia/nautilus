@@ -1,3 +1,22 @@
+.programSection {
+  padding: 4rem 6rem;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.title {
+  letter-spacing: var(--titlespacing);
+  font-size: var(--sectiontitle);
+  margin-bottom: 1rem;
+  font-family: var(--font-feature-display);
+  font-weight: bold;
+}
+
+.desc {
+  font-size: var(--bodytext);
+  margin-bottom: 2rem;
+}
+
 .stickySection {
   height: 300vh; /* Adjust based on your needs */
   position: relative;
@@ -9,28 +28,80 @@
   height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: space-evenly;
+  gap: 300px;
+  width: 100%;
 }
 
 .imageContainer {
-  width: 50%;
+  /* width: 50%;
   height: 100%;
-  position: relative;
+  position: relative; */
 }
 
 .textContainer {
   width: 50%;
-  height: 100%;
+  /* height: 100%; */
   display: flex;
   flex-direction: column;
   justify-content: center;
+  max-width: 600px;
 }
 
 .textSection {
   position: absolute;
+  max-width: 400px;
   width: 100%;
   transition: opacity 0.3s ease;
 }
 
 .sequenceImage {
   object-fit: contain;
+  max-width: 300px;
+  height: auto;
+}
+.subtitle {
+  font-size: var(--subtitle);
+  margin-bottom: 0.2rem;
+  font-family: var(--font-feature-display);
+  font-weight: 500;
+}
+
+.description {
+  font-size: var(--bodytext);
+
+  /* font-style: italic; */
+  margin-bottom: 1rem;
+}
+
+.list {
+  /* list-style-type: none; */
+  padding-left: 0;
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.list li {
+  margin-bottom: 0.5rem;
+  position: relative;
+  /* padding-left: 1rem; */
+  font-size: var(--bodytext);
+}
+@media (max-width: 768px) {
+  .contentContainer {
+    flex-wrap: wrap;
+  }
+  .programSection {
+    padding: 2rem 1rem;
+  }
+
+  .title {
+    font-size: 2rem;
+  }
+
+  .desc {
+    font-size: 1rem;
+  }
+
+
 }

@@ -44,6 +44,14 @@ const Sticky = () => {
   }, []);
 
   return (
+    <section className={styles.programSection}>
+    <h2 className={styles.title}>The program</h2>
+    <p className={styles.desc}>
+      Nautilus is designed as a 6-months program to give you a bit of your childhood
+      wander back. Take a break from the noise of your life to follow your curiosity and
+      get intense with your craft.
+    </p>
+    
     <section ref={sectionRef} className={styles.stickySection}>
       <div className={styles.contentContainer}>
         <div className={styles.imageContainer}>
@@ -57,29 +65,34 @@ const Sticky = () => {
         </div>
         <div className={styles.textContainer}>
           <div className={styles.textSection} style={{ opacity: firstSectionOpacity }}>
-            <h2>First 3 months:</h2>
-            <p>Life at the Casa Nautilus (San Francisco, CA)</p>
-            <ul>
-              <li>Onboarding</li>
-              <li>Find yourself a rhythm</li>
-              <li>Immerse yourself into your quest</li>
-              <li>Teach and be taught</li>
-              <li>Celebration banquet</li>
-            </ul>
+            <h2 className={styles.subtitle}>First 3 months:</h2>
+            <div className={styles.description}>
+              <p>Life at the Casa Nautilus (San Francisco, CA)</p>
+              <ul className={styles.list}>
+                <li>Onboarding</li>
+                <li>Find yourself a rhythm</li>
+                <li>Immerse yourself into your quest</li>
+                <li>Teach and be taught</li>
+                <li>Celebration banquet</li>
+              </ul>
+            </div>
           </div>
           <div className={styles.textSection} style={{ opacity: secondSectionOpacity }}>
-            <h2>Final 3 months:</h2>
-            <p>(Almost) All by yourself</p>
-            <ul>
-              <li>Dive into a new adventure</li>
-              <li>Weekly online check-ins</li>
-              <li>Delivering the documentation of your experience</li>
-              <li>Closing ceremony</li>
-            </ul>
+            <h2 className={styles.subtitle}>Final 3 months:</h2>
+            <div className={styles.description}>
+              <p>(Almost) All by yourself</p>
+              <ul className={styles.list}>
+                <li>Dive into a new adventure</li>
+                <li>Weekly online check-ins</li>
+                <li>Delivering the documentation of your experience</li>
+                <li>Closing ceremony</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </section>
+  </section>
   );
 };
 
