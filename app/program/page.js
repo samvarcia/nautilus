@@ -30,6 +30,8 @@ export default function Program() {
 										width={500}
 										height={400}
 										className={styles.image}
+										quality={100}
+
 									/>
 									<div>
 										<h3>Join the clan</h3>
@@ -47,6 +49,7 @@ export default function Program() {
 										width={500}
 										height={400}
 										className={styles.image}
+										quality={100}
 									/>
 								</div>
 								<div className={styles.sixLayoutBox}>
@@ -56,6 +59,8 @@ export default function Program() {
 										width={500}
 										height={400}
 										className={styles.image}
+										quality={100}
+
 									/>
 									<div>
 										<h3>Onto your own Odyssey</h3>
@@ -73,6 +78,8 @@ export default function Program() {
 										width={500}
 										height={400}
 										className={styles.image}
+										quality={100}
+
 									/>
 								</div>
 							</div>
