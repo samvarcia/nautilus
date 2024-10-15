@@ -69,22 +69,22 @@ const Sticky = () => {
             <div className={styles.description}>
               <p>Life at the Casa Nautilus (San Francisco, CA)</p>
               <ul className={styles.list}>
-                <li>Onboarding</li>
+                <li>Kickoff</li>
                 <li>Find yourself a rhythm</li>
                 <li>Immerse yourself into your quest</li>
-                <li>Teach and be taught</li>
+                <li>Teach your peers and be taught</li>
                 <li>Celebration banquet</li>
               </ul>
             </div>
           </div>
           <div className={styles.textSection} style={{ opacity: secondSectionOpacity }}>
-            <h2 className={styles.subtitle}>Final 3 months:</h2>
+            <h2 className={styles.subtitle}>Last 3 months:</h2>
             <div className={styles.description}>
-              <p>(Almost) All by yourself</p>
+              <p>Your own quest</p>
               <ul className={styles.list}>
                 <li>Dive into a new adventure</li>
                 <li>Weekly online check-ins</li>
-                <li>Delivering the documentation of your experience</li>
+                <li>Deliver the documentation of your experience</li>
                 <li>Closing ceremony</li>
               </ul>
             </div>
