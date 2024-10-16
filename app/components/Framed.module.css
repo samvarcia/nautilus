@@ -1,28 +1,38 @@
 .container {
     position: relative;
     width: 100%;
-    max-width: 42rem;
-    margin: 0 auto;
-    aspect-ratio: 16 / 9;
+    height: 500px;
     display: flex;
     justify-content: center;
     align-items: center;
-}
-
-.imageWrapper {
+    overflow: hidden;
+  }
+  
+  .imageWrapper {
     position: absolute;
-    width: 60%;
-    height: 100%;
-}
-.imageWrapper
-.frameImage {
-    pointer-events: none;
+    top: 0;
+    left: 0;
+    width: 500px;
+    height: 200px;
+  }
+  
+  .frameImage {
     object-fit: cover;
-    max-width: 300px;
-    height: auto;
-}
-
-.content {
+  }
+  .frame {
+    max-width: 600px;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    background-image: url('/program1.png');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 4rem;
+    align-items: center;
+    /* padding: 2rem; */
+  }
+  .content {
     position: relative;
     z-index: 1;
     display: flex;
@@ -30,23 +40,25 @@
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* padding: 2.4rem; */
-    width: 100%;
-    max-width: 80%;
-}
-
-.text {
-    font-size: clamp(1rem, 2.5vw, 1.4rem) !important;
+    padding: 2rem;
+    max-width: 300px;
+    /* background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 10px; */
+  }
+  
+  .text {
+    font-size: 1.2rem;
     margin-bottom: 1rem;
     margin-top: 0;
-}
-
-.feature { 
+    font-size: 400;
+  }
+  
+  .feature { 
     font-family: var(--font-feature-display);
     font-weight: 500;
-}
-
-.applyButton {
+  }
+  
+  .applyButton {
     background-color: #02AF54;
     color: white;
     padding: 0.5rem 3.5rem;
@@ -56,38 +68,28 @@
     font-family: var(--font-feature-display);
     transition: background-color 0.3s ease;
     cursor: pointer;
-}
-
-.applyButton:hover {
+  }
+  
+  .applyButton:hover {
     background-color: #059669;
-}
-
-@media (max-width: 768px) {
-    .container {
-        aspect-ratio: auto;
-        height: auto;
-        min-height: 300px;
-    }
-
+  }
+  
+  @media (max-width: 768px) {
     .content {
-        padding: 1.5rem;
+      padding: 1.5rem;
     }
-
+  
     .applyButton {
-        padding: 0.5rem 2.5rem;
+      padding: 0.5rem 2.5rem;
     }
-}
-
-@media (max-width: 480px) {
-    .container {
-        min-height: 250px;
-    }
-
+  }
+  
+  @media (max-width: 480px) {
     .content {
-        padding: 1rem;
+      padding: 1rem;
     }
-
+  
     .applyButton {
-        padding: 0.5rem 2rem;
+      padding: 0.5rem 2rem;
     }
-}
+  }
