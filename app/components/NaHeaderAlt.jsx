@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useState, useEffect, useCallback } from 'react';
+import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { useSpring, animated } from 'react-spring';
 import styles from './NaHeaderAlt.module.css';
@@ -8,24 +8,9 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 
 const NaHeader = () => {
-  const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  // const handleScroll = useCallback(() => {
-  //   setIsScrolled(window.scrollY > 100);
-  // }, []);
-
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, [handleScroll]);
-
-  // const headerAnimation = useSpring({
-  //   opacity: isScrolled ? 1 : 0,
-  //   transform: isScrolled ? 'translateY(0)' : 'translateY(-100%)',
-  //   config: { mass: 1, tension: 280, friction: 60 }
-  // });
 
   const isLinkActive = (href) => pathname === href;
 

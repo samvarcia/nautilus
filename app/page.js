@@ -1,9 +1,9 @@
 "use client"
-import { useState, useEffect, useCallback } from "react";
+import { useState, useEffect, useRef } from "react";
 import Image from "next/image";
 import styles from "./page.module.css";
 import Explanation from "./components/Explanation";
-import Sticky from "./components/Sticky";
+import Program from "./components/Program";
 import Protegees from "./components/Protegees";
 import Patrons from "./components/Patrons";
 import Footer from './components/Footer';
@@ -11,24 +11,39 @@ import NaHeaderAlt from './components/NaHeaderAlt';
 import Link from "next/link";
 
 export default function Home() {
-  // const [showHeader, setShowHeader] = useState(false);
+  const [showHeader, setShowHeader] = useState(false);
+  const mainRef = useRef(null);
+  const heroRef = useRef(null);
 
-  // const handleScroll = useCallback(() => {
-  //   const scrollPosition = window.scrollY;
-  //   const scrollThreshold = 100;
-  //   setShowHeader(scrollPosition > scrollThreshold);
-  // }, []);
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        // If the hero section is not intersecting (i.e., scrolled past), show the header
+        setShowHeader(!entry.isIntersecting);
+      },
+      {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0,
+      }
+    );
 
-  // useEffect(() => {
-  //   window.addEventListener('scroll', handleScroll);
-  //   return () => window.removeEventListener('scroll', handleScroll);
-  // }, [handleScroll]);
+    if (heroRef.current) {
+      observer.observe(heroRef.current);
+    }
+
+    return () => {
+      if (heroRef.current) {
+        observer.unobserve(heroRef.current);
+      }
+    };
+  }, []);
 
   return (
     <div className={styles.page}>
-      <NaHeaderAlt  />
-      <main>
-        <section className={styles.hero}>
+      {showHeader && <NaHeaderAlt />}
+      <main ref={mainRef}>
+        <section ref={heroRef} className={styles.hero}>
           <div className={styles.heroContent}>
             <h1 className={styles.heroText}>
               <span className={styles.logoWrapper}>
@@ -62,7 +77,7 @@ export default function Home() {
         </section>
       </main>
       <Explanation />
-      <Sticky />
+      <Program />
       <Protegees />
       <Patrons />
       <Footer />

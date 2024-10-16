@@ -7,7 +7,7 @@
   background-position: center;
   background-size: cover;
   color: #F8F4EC;
-  z-index: 1000;
+  /* z-index: 1000; */
   font-family: var(--font-feature-display);
   font-weight: 400;
   font-size: 1.7rem;
