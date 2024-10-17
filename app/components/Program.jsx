@@ -46,9 +46,7 @@ const Program = () => {
     <section className={styles.programSection}>
       <h2 className={styles.title}>The program</h2>
       <p className={styles.desc}>
-        Nautilus is designed as a 6-months program to give you a bit of your childhood
-        wonder back. Take a break from the noise of your life to follow your curiosity and
-        get intense with your craft.
+      Nautilus is designed to give you some of your childhood wonder back. Take a break from the noise of your life to follow your curiosity and master your craft.
       </p>
       <div className={styles.contentWrapper}>
         <div className={styles.spiralWrapper}>
@@ -57,9 +55,9 @@ const Program = () => {
         <div className={styles.textContent}>
           <div className={styles.column1}>
             <h3 className={styles.subtitle}>First 3 months:</h3>
-            <p className={styles.description}>Life at the Casa Nautilus</p>
+            <p className={styles.description}>Life at Casa Nautilus</p>
             <ul className={styles.list}>
-              <li>Kickoff</li>
+              <li>Meet your new friends</li>
               <li>Find yourself a rhythm</li>
               <li>Immerse yourself into your craft</li>
               <li>Teach your peers and be taught</li>
@@ -70,9 +68,9 @@ const Program = () => {
             <h3 className={styles.subtitle}>Last 3 months:</h3>
             <p className={styles.description}>Your own quest</p>
             <ul className={styles.list}>
-              <li>Dive into a new adventure</li>
-              <li>Weekly online check-ins</li>
-              <li>Deliver the documentation of your experience</li>
+              <li>Take your craft on a new adventure</li>
+              <li>Weekly check-ins 1-1 and in group</li>
+              <li>Deliver the story of your experience</li>
               <li>Closing ceremony</li>
             </ul>
           </div>
