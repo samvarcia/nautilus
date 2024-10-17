@@ -95,39 +95,40 @@
 
 @media (max-width: 768px) {
   .heroContent {
-    padding: 2rem;
-    margin-top: 1rem;
+    padding: 0;
+    margin: 0;
+    width: 60%;
   }
 
   .applyButton {
-    font-size: 1.2rem;
+    font-size: 1.4rem;
     padding: 0.5rem 2.5rem;
-    align-self: flex-end;
+    align-self: flex-start;
   }
 
   .hero {
-    justify-content: flex-start;
-    padding-top: 4rem;
+    /* justify-content: flex-start;
+    padding-top: 4rem; */
   }
 
   .heroText {
     font-size: 2.2rem;
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
   }
 
   .logoImage {
-    max-width: 180px;
+    max-width: 200px;
   }
   
   .inlineImage {
-    width: 100px;
-    height: 60px;
+    width: 120px;
+    height: 80px;
   }
 }
 
 @media (max-width: 480px) {
   .heroContent {
-    padding: 1.5rem;
+    /* padding: 1.5rem; */
   }
 
   .heroText {
@@ -141,7 +142,7 @@
   }
 
   .logoImage {
-    max-width: 140px;
+    /* max-width: 140px; */
   }
 
   .applyButton {
@@ -153,6 +154,10 @@
 @media (max-width: 360px) {
   .heroText {
     font-size: 1.5rem;
+  }  .heroContent {
+    padding: 0;
+    margin: 0;
+    width: 80%;
   }
 
   .inlineImage {
@@ -161,6 +166,6 @@
   }
 
   .logoImage {
-    max-width: 120px;
+    /* max-width: 120px; */
   }
 }
