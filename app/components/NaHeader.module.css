@@ -12,7 +12,9 @@
   font-weight: 400;
   font-size: 1.7rem;
 }
-
+.scrolledHeaderContent a{
+  height: fit-content;
+}
 .initialHeader {
   display: flex;
   justify-content: center;
@@ -21,6 +23,7 @@
 }
 .fullLogo, .Logo{
   height: auto;
+  margin-top: 3px;
 }
 .activeLink {
   color: #E5D3B3;
