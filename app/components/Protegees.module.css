@@ -56,6 +56,9 @@
   .protegesSection {
     padding: 3rem 2rem;
   }
+  .item2, .item3{
+    display: none;
+  }
 
   .image {
     max-width: 90%;
@@ -66,7 +69,8 @@
 
 @media (max-width: 768px) {
   .protegesSection {
-    padding: 2rem 1rem;
+    padding: 2rem 4rem;
+    text-align: left;
   }
 
   .title {
@@ -87,12 +91,10 @@
   }
 
   .gridTopLeft {
-    align-items: center;
+    /* align-items: center; */
   }
 
   .item1,
-  .item2,
-  .item3,
   .item4 {
     width: 100%;
     display: flex;
@@ -116,9 +118,10 @@
 
   .title {
     font-size: 2rem;
+    margin-left: 2rem;
   }
 
   .image {
-    max-width: 70%;
+    max-width: 80%;
   }
 }

@@ -6,7 +6,7 @@ const FramedT = () => {
   return (
     <div className={styles.frameContainer}>
       <div className={styles.frame}>
-        <div className={styles.content}>
+        <div className={styles.content}> 
           <div className={styles.text}>  
             <p>We seek quirky people aged 22 and under.</p>
             <p>

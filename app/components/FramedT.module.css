@@ -5,7 +5,7 @@
   /* min-height: 50vh; */
   /* padding: 1rem; */
 }
-
+ 
 .frame {
   max-width: 600px;
   width: 70%;
@@ -69,8 +69,8 @@
   }
 
   .content {
-    max-width: 100%;
-    padding: 4rem;
+    /* max-width: 100%; */
+    padding: 1.6rem 1rem;
   }
   .content p {
     font-size: 1rem;
@@ -81,6 +81,7 @@
 
   .learnMore {
     padding: 0.4rem 1.5rem;
+    font-size: 1.3rem;
   }
 }
 

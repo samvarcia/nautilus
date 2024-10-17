@@ -13,7 +13,7 @@ const Protegees = () => {
               <h1 className={styles.title}>Our proteges</h1>
               <div className={`${styles.item} ${styles.item1}`}>
                 <Image src="/b1.png" alt="Protege 1" width={600} height={200} className={styles.image} />
-              </div>
+              </div> 
             </div>
             <div className={`${styles.item} ${styles.item2}`}>
               <Image src="/b2.png" alt="Protege 2" width={300} height={500} className={styles.image} />

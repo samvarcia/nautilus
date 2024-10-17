@@ -71,22 +71,26 @@
   @media (max-width: 768px) {
     .explanationSection {
       padding: 3rem 1rem;
+
+    }
+    .description{
+      font-size: 1.1rem;
     }
   
     .title {
       font-size: 2rem;
-    }
-  .description,   .supportText 
-    {
-    line-height: 1;
+      line-height: 0.9;
 
-  }
+    }
+    .description,   .supportText {
+      line-height: 1;
+    }
     .cohortInfo {
       flex-direction: column;
       gap: 1rem;
     }
     .cohortText{
       line-height: 1;
-
+      font-size: 2rem;
     }
   }

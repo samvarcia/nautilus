@@ -62,7 +62,7 @@
   --cream: #E5D3B3;
   --subtitle: 2.3rem;
   --sectiontitle: 3.2rem;
-  --bodytext: 1.4rem;
+  --bodytext: clamp(1.2rem, 0.5vw + 1rem, 1.4rem);
   --titlespacing: -2px;
   --font-feature-display: 'Feature Display', sans-serif;
   --font-pp-montreal-neue: 'PP Neue Montreal', sans-serif;
