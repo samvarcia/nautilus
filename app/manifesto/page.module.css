@@ -1,6 +1,7 @@
-.page{
+.page {
     margin-top: 7rem;
-  }
+}
+
 .manifestoContent {
     display: flex;
     flex-direction: column;
@@ -26,7 +27,7 @@
 }
 
 .text p {
-    font-size: clamp(1rem, 3vw, 1.4rem);
+    font-size: var(--bodytext);
     margin-bottom: 20px;
 }
 
@@ -59,7 +60,6 @@
 
 .thirdParagraph img {
     width: 100%;
-    /* max-width: 90%; */
     height: auto;
 }
 
@@ -69,28 +69,55 @@
     height: auto;
     margin: 1rem 0;
 }
-.fourthParagraph{
+
+.fourthParagraph {
     margin-bottom: 5rem;
 }
 
+.mobileImage {
+    display: none;
+}
+
 @media (max-width: 768px) {
-    .manifestoContent{
+    .manifestoContent h1 {
+        margin: 0;
+    }
+    .manifestoContent {
         padding: 1rem;
     }
+    
     .text {
         width: 100%;
+    }
+    .text p {
+        font-size: 1rem;
+
     }
     
     .firstParagraph, .secondParagraph, .fourthParagraph {
         padding: 5px;
         flex-wrap: wrap;
         gap: 20px;
+        flex-direction: column;
+        align-items: center;
+        margin: 1rem;
     }
     
     .thirdParagraph {
         flex-wrap: wrap;
-padding: 5px;
-gap: 20px;
-
+        padding: 5px;
+        gap: 20px;
+    }
+    
+    .mobileImage {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 1rem 0;
+    }
+    
+    .desktopImage {
+        display: none;
     }
 }

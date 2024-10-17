@@ -9,7 +9,7 @@ import "slick-carousel/slick/slick-theme.css";
 const Patrons = () => {
   const [isMobile, setIsMobile] = useState(false);
 
-  useEffect(() => {
+  useEffect(() => { 
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
     };
