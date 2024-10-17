@@ -114,6 +114,7 @@
 
   .mobileMenuOpen {
     display: flex;
+    padding: 1rem;
   }
 
   .menu li {

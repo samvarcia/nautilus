@@ -10,7 +10,7 @@ export default function Manifesto() {
       <div className={styles.page}>
         <div className={styles.manifestoContent}>
           <h1>Manifesto</h1>
-          <div className={styles.firstParagraph}>
+          <div className={styles.firstParagraph}> 
             <div className={styles.text}>
               <h2 className={styles.paraSub}>School has stolen your childhood</h2>
               <Image src="/manifesto1.png" alt="School has stolen your childhood" width={500} height={660} className={styles.mobileImage} />

@@ -28,9 +28,13 @@
     font-size: var(--sectiontitle);
     margin-bottom: 1.5rem;
 }
-.image2{
+
+.image2 {
     width: 100%;
     height: auto;
+}
+.mobileImage {
+    display: none;
 }
 .Six p {
     font-size: var(--bodytext);
@@ -47,14 +51,16 @@
     gap: 50px;
     margin: 2rem 0;
 }
-.sixLayoutBox{
+
+.sixLayoutBox {
     display: flex;
     justify-content: space-between;
     gap: 3rem;
     align-items: center;
 }
+
 .sixLayoutBox img {
-    min-width: 500px!important;
+    min-width: 500px !important;
     height: auto;
 }
 
@@ -96,8 +102,14 @@
         padding: 2rem 4rem;
     }
 
-    .sixLayout {
+    .sixLayoutBox {
         flex-direction: column;
+        gap: 2rem;
+    }
+
+    .sixLayoutBox img {
+        min-width: auto !important;
+        max-width: 100%;
     }
 
     .ProgramCTA {
@@ -112,23 +124,31 @@
 }
 
 @media (max-width: 768px) {
-    .sixLayoutBox{
-        flex-wrap: wrap;
-
+    .desktopImage {
+        display: none;
+    }
+    .mobileImage {
+        display: block;
+        width: 100%;
+        max-width: 450px;
+        height: auto;
+        margin: 1rem 0;
     }
     .ProgramContent {
         padding: 1rem 2rem;
     }
-    .Six{
-        max-width: 90%;
+
+    .Six {
+        max-width: 100%;
     }
-    .image{
+
+    .image {
         width: 100%;
         height: auto;
     }
 
     .ProgramTitle {
-        font-size: 3rem;
+        font-size: 2rem;
         margin: 2rem 0;
     }
 
@@ -137,7 +157,7 @@
     }
 
     .Six p, .sixHeader p, .ProgramDesc {
-        font-size: 1.2rem;
+        font-size: 1rem;
     }
 
     .sixText h3, .Six h3 {
@@ -155,7 +175,7 @@
     }
 
     .ProgramTitle {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .sixHeader h1 {

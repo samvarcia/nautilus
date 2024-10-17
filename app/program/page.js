@@ -29,18 +29,35 @@ export default function Program() {
 										alt="Join the clan"
 										width={500}
 										height={400}
-										className={styles.image}
+										className={styles.desktopImage}
 										quality={100}
 
 									/>
 									<div>
 										<h3>Join the clan</h3>
+									<Image
+										src="/six1.png"
+										alt="Join the clan"
+										width={500}
+										height={400}
+										className={styles.mobileImage}
+										quality={100}
+
+									/>
 										<p>We come together weekly, both as a group and 1-on-1. Your peers will be there to help you push through moments of challenge, spark your creativity, and make sure you have a lot of fun along the way.</p>
 									</div>
 								</div>
 								<div className={styles.sixLayoutBox}>
 									<div>
 										<h3>Live at Casa Nautilus</h3>
+										<Image
+										src="/six2.png"
+										alt="Join the clan"
+										width={500}
+										height={400}
+										className={styles.mobileImage}
+										quality={100}
+									/>
 										<p>For the first three months, Casa Nautilus will be your home, nestled in the heart of San Francisco. It’s a peaceful haven, offering you a place to retreat during the day. On Friday nights, join us for weekly salons and banquets, where you’ll connect with the patrons and mentors of our community.</p>
 									</div>
 									<Image
@@ -48,7 +65,7 @@ export default function Program() {
 										alt="Join the clan"
 										width={500}
 										height={400}
-										className={styles.image}
+										className={styles.desktopImage}
 										quality={100}
 									/>
 								</div>
@@ -58,18 +75,33 @@ export default function Program() {
 										alt="Join the clan"
 										width={500}
 										height={400}
-										className={styles.image}
+										className={styles.desktopImage}
 										quality={100}
-
 									/>
 									<div>
 										<h3>Onto your own Odyssey</h3>
+										<Image
+										src="/six3.png"
+										alt="Join the clan"
+										width={500}
+										height={400}
+										className={styles.mobileImage}
+										quality={100}
+									/>
 										<p>In the second half of the program, you’ll navigate mostly on your own. We’ll still sync up weekly, but the journey is yours to shape—whether that means traveling, heading back home, or exploring new paths as you continue your projects.</p>
 									</div>
 								</div>
 								<div className={styles.sixLayoutBox}>
 									<div>
 										<h3>Create the tale of your quest</h3>
+										<Image
+										src="/six4.png"
+										alt="Join the clan"
+										width={500}
+										height={400}
+										className={styles.mobileImage}
+										quality={100}
+									/>
 										<p>Throughout the program, you will document your experience, capturing the essence of your growth and discoveries. At the end of six months, you’ll present it in any format you choose, creating a lasting reflection of this transformative chapter—something to look back on for years to come.</p>
 									</div>
 									<Image
@@ -77,9 +109,8 @@ export default function Program() {
 										alt="Join the clan"
 										width={500}
 										height={400}
-										className={styles.image}
+										className={styles.desktopImage}
 										quality={100}
-
 									/>
 								</div>
 							</div>
