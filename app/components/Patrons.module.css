@@ -33,29 +33,40 @@
     transition: background-color 0.3s ease;
     font-family: var(--font-feature-display);
     font-weight: 400;
-  }
-  .applyButton:hover {
+}
+.applyButton:hover {
     background-color: #008c59;
-  }
+}
 .cta{
     margin: 3rem 0 5rem 0;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 @media (max-width: 768px) {
     .title{
-        font-size: 2.5rem;
-
+        font-size: 2rem;
+    }
+    .description{
+        font-size: 1rem;
     }
     .PatronsSection{
-        padding: 4rem 1rem;
+        padding: 3rem 1rem;
     }
     .patrons{
-        flex-direction: column;
-        align-items: center;
+        display: none;
     }
     .cta{
-        margin: 1rem 0 3rem 0;
+        margin: 5rem 0 3rem 0;
+    }
+    .mobileSlider {
+        margin-top: 2rem;
+    }
+    .mobileSlider .slick-dots {
+        bottom: -30px;
+    }
+    .mobileSlider .slick-dots li button:before {
+        font-size: 15px;
     }
 }
