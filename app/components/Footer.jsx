@@ -24,8 +24,8 @@ const Footer = () => {
                 <div className="">
                     <ul className="">
                         <li><a href="https://twitter.com/NautilusQuest" target="_blank" rel="noopener noreferrer" className="">Twitter</a></li>
-                        {/* <li><a href="https://www.instagram.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Instagram</a></li>
-                        <li><a href="https://substack.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Substack</a></li> */}
+                        <li><a href="https://www.instagram.com/nautilus.quest" target="_blank" rel="noopener noreferrer" className="">Instagram</a></li>
+                        {/* <li><a href="https://substack.com/nautilusquest" target="_blank" rel="noopener noreferrer" className="">Substack</a></li> */}
                     </ul>
                 </div>
             </div>
