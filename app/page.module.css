@@ -2,7 +2,7 @@
   height: 100vh;
   background-image: url('../public/herobg.png');
   background-position: center;
-  background-size: cover;  
+  background-size: 105% 105%;  
   /* background-repeat: no-repeat; */
   color: var(--background);
   display: flex;
@@ -109,6 +109,7 @@
   .hero {
     /* justify-content: flex-start;
     padding-top: 4rem; */
+    background-size: cover;  
   }
 
   .heroText {
