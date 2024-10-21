@@ -1,10 +1,16 @@
 import styles from './Explanation.module.css';
 import Link from 'next/link';
+import { motion } from "framer-motion";
 
 const Explanation = () => {
+  const fadeInVariants = {
+    hidden: { opacity: 0 },
+    visible: { opacity: 1 }
+  };
   return (
     <section className={styles.explanationSection}>
-      <div className={styles.content}>
+      <motion.div className={styles.content}             variants={fadeInVariants}
+            transition={{ duration: 1.5, delay: 0.5 }}>
         <h2 className={styles.title}>Get intense with your craft.</h2>
         <p className={styles.description}>
         Nautilus is a six-month program for young and quirky individuals. <br />
@@ -27,7 +33,7 @@ const Explanation = () => {
               {'   '} NEXT COHORT ON MARCH 1ST.               
             </span>
         </div>
-      </div> 
+      </motion.div> 
     </section>
   );
 };
