@@ -62,21 +62,21 @@ export default function Home() {
           >
             <h1 className={styles.heroText}>
               <span className={styles.logoWrapper}>
-                <Image src="/logo.png" alt="Nautilus" width={150} height={40} className={styles.logoImage} />
+                <Image src="/logo.png" alt="Nautilus" width={150} height={40} className={styles.logoImage} priority/>
               </span>
               <span>gives you six months to</span>
               <span className={styles.textLine}>
                 <span className={styles.feature}>
                 explore
                 </span>
-                <Image src="/explore.png" alt="Explore" width={150} height={80} className={styles.inlineImage} />
+                <Image src="/explore.png" alt="Explore" width={150} height={80} className={styles.inlineImage} priority/>
                 , <span className={styles.feature}>learn</span> 
-                <Image src="/image3.png" alt="Learn" width={150} height={80} className={styles.inlineImage} />
+                <Image src="/image3.png" alt="Learn" width={150} height={80} className={styles.inlineImage} priority/>
                 and <br />
               </span>
               <span className={styles.textLine}>
                 <span className={styles.feature}>create</span>
-                <Image src="/image2.png" alt="Create" width={150} height={80} className={styles.inlineImage} />
+                <Image priority src="/image2.png" alt="Create" width={150} height={80} className={styles.inlineImage} />
                 in complete freedom.
               </span>
             </h1>
