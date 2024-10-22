@@ -86,7 +86,7 @@
 
 @media (max-width: 768px) {
   .programSection {
-    padding: 2rem 1rem;
+    padding: 2rem 1rem 0rem 1rem;
   }
 
   .title {
@@ -106,8 +106,9 @@
     gap: 1rem;
     height: auto;
     min-height: 100vh;
-    justify-content: flex-start;
-    padding-top: 2rem;
+    /* justify-content: flex-start; */
+    align-items: center;
+    padding-top: 6rem;
   }
 
   .imageContainer {
@@ -117,7 +118,7 @@
 
   .textContainer {
     width: 100%;
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
     min-height: 300px;
   }

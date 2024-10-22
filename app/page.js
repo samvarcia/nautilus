@@ -8,6 +8,7 @@ import Protegees from "./components/Protegees";
 import Patrons from "./components/Patrons";
 import Footer from './components/Footer';
 import NaHeaderAlt from './components/NaHeaderAlt';
+import Sticky from "./components/Sticky";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
@@ -96,7 +97,8 @@ export default function Home() {
         </section>
       </motion.main>
       <Explanation />
-      <Program />
+      <Sticky />
+      {/* <Program /> */}
       <Protegees />
       <Patrons />
       <Footer />
