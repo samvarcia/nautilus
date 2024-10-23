@@ -25,7 +25,7 @@ const Sticky = () => {
       if (index < 10) {
         setFirstSectionOpacity(index / 9);
       } else {
-        setFirstSectionOpacity(0);
+        setFirstSectionOpacity(0.5);
       }
 
       // Fade in second section from step 10 to 20
