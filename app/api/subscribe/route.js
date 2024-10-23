@@ -19,8 +19,8 @@ export async function POST(req) {
       )
     }
 
-    const LIST_ID = '7fd3f614d5'
-    const API_KEY = '409b89bf0ab788cd4d004e99604454e6-us22'
+    const LIST_ID = process.env.MAILCHIMP_LIST_ID
+    const API_KEY = process.env.MAILCHIMP_API_KEY
     const DATACENTER = API_KEY.split('-')[1]
 
     const url = `https://us22.api.mailchimp.com/3.0/lists/${LIST_ID}/members/`
