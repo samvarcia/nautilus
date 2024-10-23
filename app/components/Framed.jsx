@@ -13,8 +13,8 @@ const Framed = () => {
         </p>
 
         <button className={styles.applyButton}>
-          <Link href="/program" 
-          >
+          <Link href="/https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+          target='_blank' >
             Apply
           </Link>
         </button>
