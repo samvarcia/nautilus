@@ -26,14 +26,14 @@ const Sticky = () => {
         setFirstSectionOpacity(1); // Always fully visible for first half
       } else {
         // Fade out over steps 10-12
-        const fadeOutProgress = (index - 10) / 2;
+        const fadeOutProgress = (index - 10);
         setFirstSectionOpacity(Math.max(0, 1 - fadeOutProgress));
       }
 
       // Start fading in second section from step 8
-      if (index >= 8) {
+      if (index >= 10) {
         // Fade in over steps 8-10
-        const fadeInProgress = (index - 8) / 2;
+        const fadeInProgress = (index - 10) / 2;
         setSecondSectionOpacity(Math.min(1, fadeInProgress));
       } else {
         setSecondSectionOpacity(0);
