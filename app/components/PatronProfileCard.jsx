@@ -2,7 +2,7 @@ import React from 'react';
 import Image from 'next/image';
 import styles from './PatronProfileCard.module.css';
 
-const PatronProfileCard = ({ imageSrc, patronName }) => {
+const PatronProfileCard = ({ imageSrc, patronName, patronLink }) => {
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
@@ -15,7 +15,9 @@ const PatronProfileCard = ({ imageSrc, patronName }) => {
             />
       </div>
       <div className={styles.nameContainer}>
-        <p className={styles.name}>{patronName}</p>
+        <a href={patronLink} target='_blank'>
+          <p className={styles.name}>{patronName}</p>
+        </a>
       </div>
     </div>
   );

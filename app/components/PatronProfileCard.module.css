@@ -8,9 +8,10 @@
     background-color: var(--cream);
     font-family: var(--font-feature-display);
     font-weight: 400;
-    padding: 2px 5px;
+    padding: 5px 8px;
     font-size: var(--bodytext);
     margin-top: 1rem;
+    text-decoration: underline;
 }
 .image{
     width: auto;

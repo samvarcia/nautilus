@@ -29,10 +29,10 @@ const Patrons = () => {
   };
 
   const patrons = [
-    { imageSrc: "/Danielle.png", patronName: "Danielle Strachman" },
-    { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez" },
-    { imageSrc: "/1517Fund.png", patronName: "1517 Fund" },
-    { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen" },
+    { imageSrc: "/Danielle.png", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
+    { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
+    { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
+    { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
   ];
 
   return (
@@ -61,6 +61,7 @@ const Patrons = () => {
                   key={index}
                   imageSrc={patron.imageSrc} 
                   patronName={patron.patronName} 
+                  patronLink={patron.patronLink}
                 />
               ))}
             </div>
