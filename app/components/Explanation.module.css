@@ -5,10 +5,10 @@
     /* filter: blur(1px); */
     padding: 4rem 7rem;
     color:  var(--foreground);
-    min-height: 80vh;
+    min-height: 90vh;
     display: flex;
-    /* align-items: center;
-    justify-content: center; */
+    align-items: center;
+    justify-content: center;
   }
   
   .content {

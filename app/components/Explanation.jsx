@@ -8,7 +8,7 @@ const Explanation = () => {
     visible: { opacity: 1 }
   };
   return (
-    <section className={styles.explanationSection}>
+    <section className={styles.explanationSection}> 
       <motion.div className={styles.content}             variants={fadeInVariants}
             transition={{ duration: 1.5, delay: 0.5 }}>
         <h2 className={styles.title}>Get intense with your craft.</h2>
