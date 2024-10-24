@@ -1,6 +1,6 @@
 .explanationSection {
     background-image: url('/image1.png');
-    background-size: cover;
+    background-size: 102%;
     background-position: center;
     /* filter: blur(1px); */
     padding: 4rem 7rem;
@@ -71,7 +71,7 @@
   @media (max-width: 768px) {
     .explanationSection {
       padding: 3rem 1rem;
-
+      background-size: cover;
     }
     .description{
       font-size: 1rem;
