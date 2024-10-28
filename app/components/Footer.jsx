@@ -32,7 +32,7 @@ const Footer = () => {
             </div>
             <div className={styles.footerRight}>
                 <p className="">&copy; Nautilus Quest - 2024, all rights reserved</p>
-                <SubscribeForm />
+                {/* <SubscribeForm /> */}
             </div>
         </div>
         <div className={styles.footerBottom}>
