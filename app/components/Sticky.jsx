@@ -63,6 +63,7 @@ const Sticky = () => {
               layout="fill"
               objectFit="contain"
               className={styles.sequenceImage}
+              priority
             />
           </div>
           <div className={styles.textContainer}>
