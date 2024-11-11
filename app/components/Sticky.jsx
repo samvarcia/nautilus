@@ -15,25 +15,31 @@ const Sticky = () => {
     if (sectionRef.current) {
       const { top, height } = sectionRef.current.getBoundingClientRect();
       const scrollPercentage = Math.max(0, Math.min(1, -top / (height - window.innerHeight)));
-      const index = Math.min(
+      let index = Math.min(
         Math.floor(scrollPercentage * (imageSources.length - 1)),
         imageSources.length - 1
       );
+
+      // Lock the last step frame
+      if (index === imageSources.length - 1 && scrollPercentage === 1) {
+        index = imageSources.length - 1;
+      }
+
       setCurrentImageIndex(index);
 
       // Keep first section visible until middle, then fade out
-      if (index < 10) {
+      if (index < 13) {
         setFirstSectionOpacity(1); // Always fully visible for first half
       } else {
         // Fade out over steps 10-12
-        const fadeOutProgress = (index - 10);
+        const fadeOutProgress = (index - 13);
         setFirstSectionOpacity(Math.max(0, 1 - fadeOutProgress));
       }
 
       // Start fading in second section from step 8
-      if (index >= 10) {
+      if (index >= 13) {
         // Fade in over steps 8-10
-        const fadeInProgress = (index - 10) / 2;
+        const fadeInProgress = (index - 13) / 2;
         setSecondSectionOpacity(Math.min(1, fadeInProgress));
       } else {
         setSecondSectionOpacity(0);
@@ -64,6 +70,9 @@ const Sticky = () => {
               objectFit="contain"
               className={styles.sequenceImage}
               priority
+              quality={80}
+              blurDataURL="/placeholder.png"
+              placeholder="blur"
             />
           </div>
           <div className={styles.textContainer}>
