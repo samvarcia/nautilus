@@ -23,6 +23,11 @@
 .wrap{
     display: flex;
     flex-direction: column;
+    /* align-items: center; */
+}
+.wrap2{
+    display: flex;
+    flex-direction: column;
     align-items: center;
 }
 .applyButton {

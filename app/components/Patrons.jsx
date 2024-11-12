@@ -57,6 +57,7 @@ const Patrons = () => {
               ))}
             </Slider>
           ) : (
+            <div className={styles.wrap2}>
             <div className={styles.patrons}>
               {patrons.map((patron, index) => (
                 <PatronProfileCard 
@@ -66,6 +67,7 @@ const Patrons = () => {
                   patronLink={patron.patronLink}
                 />
               ))}
+            </div>
             </div>
           )}
           <div className={styles.cta}>
