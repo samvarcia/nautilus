@@ -9,8 +9,8 @@ const PatronProfileCard = ({ imageSrc, patronName, patronLink }) => {
             <Image
               src={imageSrc} 
               alt={`Portrait of ${patronName}`}
-            height={350}
-            width={300}
+              height={350}
+              width={300}
               className={styles.image}
             />
       </div>
