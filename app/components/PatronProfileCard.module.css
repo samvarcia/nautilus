@@ -16,6 +16,6 @@
 }
 .image{
     width: auto;
-    max-height: 280px;
-    /* max-height: 300px; */
+    /* max-height: 280px; */
+    max-height: 300px;
 }
