@@ -3,7 +3,8 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    min-width: 200px;
+    /* min-width: 200px; */
+    width: 300px;
 } 
 .nameContainer{
     background-color: var(--cream);

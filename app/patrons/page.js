@@ -180,8 +180,8 @@ export default function Patrons() {
 
   const patronsData = [
     { imageSrc: "/Danielle.png", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
-    { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
     { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
+    { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
     { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
     { imageSrc: "/x.png", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
     { imageSrc: "/j.png", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
