@@ -13,11 +13,11 @@
 }
 .patrons{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     align-items: center;
     margin-top: 2rem;
-    flex-wrap: wrap;
-    /* width: 80%; */
+    /* flex-wrap: wrap; */
+    width: 100%;
     gap: 2rem;
 }
 .wrap{
