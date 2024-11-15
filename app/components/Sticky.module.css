@@ -18,7 +18,7 @@
 }
 
 .stickySection {
-  height: 300vh;
+  height: 650vh;
   position: relative;
 }
 
@@ -37,6 +37,49 @@
   position: relative;
   width: 300px;
   height: 300px;
+  opacity: 0;
+  will-change: transform, opacity;
+  transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+}
+
+.imageContainer.loaded {
+  opacity: 1;
+}
+
+.loadingOverlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(255, 255, 255, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+}
+
+.loadingBar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s ease-out;
+}
+
+.imageWrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: opacity 0.3s ease-out;
+  will-change: opacity;
+}
+
+.sequenceImage {
+  object-fit: contain;
+  transition: transform 0.3s ease-out;
+  will-change: transform;
 }
 
 .textContainer {
@@ -53,11 +96,8 @@
   position: absolute;
   max-width: 400px;
   width: 100%;
-  transition: opacity 0.3s ease;
-}
-
-.sequenceImage {
-  object-fit: contain;
+  transition: opacity 0.3s ease-out, transform 0.3s ease-out;
+  will-change: opacity, transform;
 }
 
 .subtitle {
@@ -98,7 +138,7 @@
   }
 
   .stickySection {
-    height: 200vh;
+    height: 250vh;
   }
 
   .contentContainer {
@@ -106,7 +146,6 @@
     gap: 1rem;
     height: auto;
     min-height: 100vh;
-    /* justify-content: flex-start; */
     align-items: center;
     padding-top: 6rem;
   }
@@ -134,7 +173,8 @@
     font-size: 1.2rem;
   }
 
-  .description, .list li {
+  .description, 
+  .list li {
     font-size: 0.9rem;
   }
 }

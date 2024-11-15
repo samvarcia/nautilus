@@ -6,52 +6,137 @@ const imageSources = Array.from({ length: 20 }, (_, i) => `/Step ${i + 1}.png`);
 
 const Sticky = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
-  const [firstSectionOpacity, setFirstSectionOpacity] = useState(1); // Start at 1 to show from beginning
+  const [firstSectionOpacity, setFirstSectionOpacity] = useState(1);
   const [secondSectionOpacity, setSecondSectionOpacity] = useState(0);
+  const [imageScale, setImageScale] = useState(1);
+  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
+  const [imagesLoaded, setImagesLoaded] = useState(false);
+  const [isFirstAnimation, setIsFirstAnimation] = useState(true);
   const sectionRef = useRef(null);
   const requestRef = useRef();
+  const loadedImages = useRef(new Set());
+  const prevImageIndex = useRef(0);
+
+  // Enhanced preloading strategy
+  useEffect(() => {
+    let mounted = true;
+    const preloadedImages = new Map();
+
+    const preloadImage = async (src, index) => {
+      return new Promise((resolve, reject) => {
+        const img = new Image();
+        img.src = src;
+        img.onload = () => {
+          if (mounted) {
+            preloadedImages.set(index, img);
+            resolve(index);
+          }
+        };
+        img.onerror = reject;
+      });
+    };
+
+    // Preload images in sequence order
+    const preloadSequentially = async () => {
+      try {
+        // First preload the first few images
+        await Promise.all(
+          imageSources.slice(0, 5).map((src, i) => preloadImage(src, i))
+        );
+
+        if (mounted) {
+          setImagesLoaded(true);
+          
+          // Then preload the rest in background
+          imageSources.slice(5).forEach((src, i) => {
+            preloadImage(src, i + 5);
+          });
+        }
+      } catch (error) {
+        console.error('Error preloading images:', error);
+        if (mounted) {
+          setImagesLoaded(true);
+        }
+      }
+    };
+
+    preloadSequentially();
+
+    return () => {
+      mounted = false;
+    };
+  }, []);
 
   const animate = useCallback(() => {
-    if (sectionRef.current) {
+    if (sectionRef.current && imagesLoaded) {
       const { top, height } = sectionRef.current.getBoundingClientRect();
-      const scrollPercentage = Math.max(0, Math.min(1, -top / (height - window.innerHeight)));
+      
+      const scrollableHeight = height - window.innerHeight;
+      const effectiveScrollableHeight = scrollableHeight * 0.85;
+      const scrolled = -top;
+      
+      let scrollPercentage;
+      if (scrolled >= effectiveScrollableHeight) {
+        scrollPercentage = 1;
+      } else {
+        scrollPercentage = Math.max(0, Math.min(1, scrolled / effectiveScrollableHeight));
+      }
+
       let index = Math.min(
         Math.floor(scrollPercentage * (imageSources.length - 1)),
         imageSources.length - 1
       );
 
-      // Lock the last step frame
-      if (index === imageSources.length - 1 && scrollPercentage === 1) {
-        index = imageSources.length - 1;
+      // Smooth index transitions for first animation
+      if (isFirstAnimation && Math.abs(index - prevImageIndex.current) > 1) {
+        index = prevImageIndex.current + (index > prevImageIndex.current ? 1 : -1);
       }
+      
+      prevImageIndex.current = index;
+      setCurrentImageIndex(Math.max(0, index));
 
-      setCurrentImageIndex(index);
-
-      // Keep first section visible until middle, then fade out
-      if (index < 13) {
-        setFirstSectionOpacity(1); // Always fully visible for first half
-      } else {
-        // Fade out over steps 10-12
-        const fadeOutProgress = (index - 13);
-        setFirstSectionOpacity(Math.max(0, 1 - fadeOutProgress));
-      }
-
-      // Start fading in second section from step 8
       if (index >= 13) {
-        // Fade in over steps 8-10
-        const fadeInProgress = (index - 13) / 2;
-        setSecondSectionOpacity(Math.min(1, fadeInProgress));
+        const scaleProgress = (index - 13) / 6;
+        const newScale = Math.max(0.7, 1 - scaleProgress * 0.3);
+        setImageScale(newScale);
+
+        const xOffset = scaleProgress * 50;
+        const yOffset = scaleProgress * 30;
+
       } else {
+        setImageScale(1);
+      }
+
+      if (index < 10) {
+        setFirstSectionOpacity(1);
         setSecondSectionOpacity(0);
+      } else {
+        const fadeOutProgress = (index - 10) / 2;
+        setFirstSectionOpacity(Math.max(0, 1 - fadeOutProgress));
+        setSecondSectionOpacity(Math.min(1, fadeOutProgress));
       }
     }
     requestRef.current = requestAnimationFrame(animate);
-  }, []);
+  }, [imagesLoaded, isFirstAnimation]);
 
   useEffect(() => {
-    requestRef.current = requestAnimationFrame(animate);
-    return () => cancelAnimationFrame(requestRef.current);
-  }, [animate]);
+    if (imagesLoaded) {
+      requestRef.current = requestAnimationFrame(animate);
+      
+      // Remove first animation flag after initial scroll
+      const handleScroll = () => {
+        if (isFirstAnimation) {
+          setIsFirstAnimation(false);
+        }
+      };
+      
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        cancelAnimationFrame(requestRef.current);
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }
+  }, [animate, imagesLoaded, isFirstAnimation]);
 
   return (
     <section className={styles.programSection}>
@@ -62,21 +147,31 @@ const Sticky = () => {
       
       <section ref={sectionRef} className={styles.stickySection}>
         <div className={styles.contentContainer}>
-          <div className={styles.imageContainer}>
-            <Image
-              src={imageSources[currentImageIndex]}
-              alt={`Step ${currentImageIndex + 1}`}
-              layout="fill"
-              objectFit="contain"
-              className={styles.sequenceImage}
-              priority
-              quality={80}
-              blurDataURL="/placeholder.png"
-              placeholder="blur"
-            />
+          <div 
+            className={`${styles.imageContainer} ${imagesLoaded ? styles.loaded : ''}`}
+            style={{
+              }}
+          >
+            <div className={styles.imageWrapper}>
+              <Image
+                src={imageSources[currentImageIndex]}
+                alt={`Step ${currentImageIndex + 1}`}
+                layout="fill"
+                objectFit="contain"
+                className={styles.sequenceImage}
+                priority
+                quality={100}
+              />
+            </div>
           </div>
           <div className={styles.textContainer}>
-            <div className={styles.textSection} style={{ opacity: firstSectionOpacity }}>
+            <div 
+              className={styles.textSection} 
+              style={{ 
+                opacity: firstSectionOpacity,
+                transition: 'opacity 0.3s ease, transform 0.3s ease'
+              }}
+            >
               <h2 className={styles.subtitle}>First 3 months:</h2>
               <div className={styles.description}>
                 <p>Life at Casa Nautilus</p>
@@ -89,7 +184,13 @@ const Sticky = () => {
                 </ul>
               </div>
             </div>
-            <div className={styles.textSection} style={{ opacity: secondSectionOpacity }}>
+            <div 
+              className={styles.textSection} 
+              style={{ 
+                opacity: secondSectionOpacity,
+                transition: 'opacity 0.3s ease, transform 0.3s ease'
+              }}
+            >
               <h2 className={styles.subtitle}>Last 3 months:</h2>
               <div className={styles.description}>
                 <p>Your own quest</p>
