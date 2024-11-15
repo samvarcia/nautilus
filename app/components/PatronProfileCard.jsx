@@ -4,9 +4,7 @@ import styles from './PatronProfileCard.module.css';
 
 const PatronProfileCard = ({ imageSrc, patronName, patronLink }) => {
   // Calculate dimensions based on image source
-  const dimensions = imageSrc === 'x.png' 
-    ? { height: 450, width: 400 }
-    : { height: 350, width: 300 };
+  const dimensions = { height: 350, width: 300 };
 
   return (
     <div className={styles.card}>
