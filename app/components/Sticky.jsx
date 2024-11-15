@@ -1,112 +1,118 @@
 import React, { useEffect, useRef, useState, useCallback } from 'react';
-import Image from 'next/image';
 import styles from './Sticky.module.css';
-
-const imageSources = Array.from({ length: 20 }, (_, i) => `/Step ${i + 1}.png`);
 
 const Sticky = () => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [firstSectionOpacity, setFirstSectionOpacity] = useState(1);
   const [secondSectionOpacity, setSecondSectionOpacity] = useState(0);
-  const [imageScale, setImageScale] = useState(1);
-  const [imagePosition, setImagePosition] = useState({ x: 0, y: 0 });
   const [imagesLoaded, setImagesLoaded] = useState(false);
-  const [isFirstAnimation, setIsFirstAnimation] = useState(true);
+  const [loadingProgress, setLoadingProgress] = useState(0);
+  
+  const canvasRef = useRef(null);
   const sectionRef = useRef(null);
   const requestRef = useRef();
-  const loadedImages = useRef(new Set());
-  const prevImageIndex = useRef(0);
+  const imagesRef = useRef([]);
+  const loadedImagesCount = useRef(0);
+  
+  const imageSources = Array.from({ length: 20 }, (_, i) => `/Step ${i + 1}.png`);
 
-  // Enhanced preloading strategy
+  // Preload images and draw to canvas
   useEffect(() => {
     let mounted = true;
-    const preloadedImages = new Map();
-
-    const preloadImage = async (src, index) => {
+    const canvas = canvasRef.current;
+    const ctx = canvas.getContext('2d');
+    
+    // Set canvas size with device pixel ratio for sharp rendering
+    const dpr = window.devicePixelRatio || 1;
+    const rect = canvas.getBoundingClientRect();
+    canvas.width = rect.width * dpr;
+    canvas.height = rect.height * dpr;
+    ctx.scale(dpr, dpr);
+    
+    const loadImage = (src, index) => {
       return new Promise((resolve, reject) => {
         const img = new Image();
         img.src = src;
         img.onload = () => {
           if (mounted) {
-            preloadedImages.set(index, img);
-            resolve(index);
+            imagesRef.current[index] = img;
+            loadedImagesCount.current++;
+            setLoadingProgress((loadedImagesCount.current / imageSources.length) * 100);
+            
+            // Draw first image when it's loaded
+            if (index === 0) {
+              drawImageCentered(ctx, img, rect.width, rect.height);
+            }
+            
+            // Set images loaded when all images are ready
+            if (loadedImagesCount.current === imageSources.length) {
+              setImagesLoaded(true);
+            }
+            resolve();
           }
         };
         img.onerror = reject;
       });
     };
 
-    // Preload images in sequence order
-    const preloadSequentially = async () => {
-      try {
-        // First preload the first few images
-        await Promise.all(
-          imageSources.slice(0, 5).map((src, i) => preloadImage(src, i))
-        );
-
-        if (mounted) {
-          setImagesLoaded(true);
-          
-          // Then preload the rest in background
-          imageSources.slice(5).forEach((src, i) => {
-            preloadImage(src, i + 5);
-          });
-        }
-      } catch (error) {
-        console.error('Error preloading images:', error);
-        if (mounted) {
-          setImagesLoaded(true);
-        }
-      }
+    // Load first 5 images with high priority
+    const loadHighPriority = async () => {
+      await Promise.all(imageSources.slice(0, 5).map((src, i) => loadImage(src, i)));
+      
+      // Then load the rest in background
+      imageSources.slice(5).forEach((src, i) => loadImage(src, i + 5));
     };
 
-    preloadSequentially();
+    loadHighPriority();
 
     return () => {
       mounted = false;
     };
   }, []);
 
+  // Draw image centered in canvas
+  const drawImageCentered = useCallback((ctx, img, width, height) => {
+    ctx.clearRect(0, 0, width, height);
+    const aspect = img.width / img.height;
+    let drawWidth = width;
+    let drawHeight = width / aspect;
+    
+    if (drawHeight > height) {
+      drawHeight = height;
+      drawWidth = height * aspect;
+    }
+    
+    const x = (width - drawWidth) / 2;
+    const y = (height - drawHeight) / 2;
+    
+    ctx.drawImage(img, x, y, drawWidth, drawHeight);
+  }, []);
+
+  // Animation loop
   const animate = useCallback(() => {
-    if (sectionRef.current && imagesLoaded) {
+    if (sectionRef.current && imagesLoaded && canvasRef.current) {
       const { top, height } = sectionRef.current.getBoundingClientRect();
-      
       const scrollableHeight = height - window.innerHeight;
       const effectiveScrollableHeight = scrollableHeight * 0.85;
       const scrolled = -top;
       
-      let scrollPercentage;
-      if (scrolled >= effectiveScrollableHeight) {
-        scrollPercentage = 1;
-      } else {
-        scrollPercentage = Math.max(0, Math.min(1, scrolled / effectiveScrollableHeight));
-      }
-
-      let index = Math.min(
+      const scrollPercentage = Math.max(0, Math.min(1, scrolled / effectiveScrollableHeight));
+      const index = Math.min(
         Math.floor(scrollPercentage * (imageSources.length - 1)),
         imageSources.length - 1
       );
-
-      // Smooth index transitions for first animation
-      if (isFirstAnimation && Math.abs(index - prevImageIndex.current) > 1) {
-        index = prevImageIndex.current + (index > prevImageIndex.current ? 1 : -1);
+      
+      setCurrentImageIndex(index);
+      
+      // Draw current image
+      const ctx = canvasRef.current.getContext('2d');
+      const rect = canvasRef.current.getBoundingClientRect();
+      const currentImage = imagesRef.current[index];
+      if (currentImage) {
+        drawImageCentered(ctx, currentImage, rect.width, rect.height);
       }
       
-      prevImageIndex.current = index;
-      setCurrentImageIndex(Math.max(0, index));
-
-      if (index >= 13) {
-        const scaleProgress = (index - 13) / 6;
-        const newScale = Math.max(0.7, 1 - scaleProgress * 0.3);
-        setImageScale(newScale);
-
-        const xOffset = scaleProgress * 50;
-        const yOffset = scaleProgress * 30;
-
-      } else {
-        setImageScale(1);
-      }
-
+      // Update text sections
       if (index < 10) {
         setFirstSectionOpacity(1);
         setSecondSectionOpacity(0);
@@ -117,26 +123,14 @@ const Sticky = () => {
       }
     }
     requestRef.current = requestAnimationFrame(animate);
-  }, [imagesLoaded, isFirstAnimation]);
+  }, [imagesLoaded, drawImageCentered]);
 
   useEffect(() => {
     if (imagesLoaded) {
       requestRef.current = requestAnimationFrame(animate);
-      
-      // Remove first animation flag after initial scroll
-      const handleScroll = () => {
-        if (isFirstAnimation) {
-          setIsFirstAnimation(false);
-        }
-      };
-      
-      window.addEventListener('scroll', handleScroll);
-      return () => {
-        cancelAnimationFrame(requestRef.current);
-        window.removeEventListener('scroll', handleScroll);
-      };
+      return () => cancelAnimationFrame(requestRef.current);
     }
-  }, [animate, imagesLoaded, isFirstAnimation]);
+  }, [animate, imagesLoaded]);
 
   return (
     <section className={styles.programSection}>
@@ -147,30 +141,29 @@ const Sticky = () => {
       
       <section ref={sectionRef} className={styles.stickySection}>
         <div className={styles.contentContainer}>
-          <div 
-            className={`${styles.imageContainer} ${imagesLoaded ? styles.loaded : ''}`}
-            style={{
+          <div className={`${styles.imageContainer} ${imagesLoaded ? styles.loaded : ''}`}>
+            {!imagesLoaded && (
+              <div className={styles.loadingOverlay}>
+                <div 
+                  className={styles.loadingBar} 
+                  style={{ width: `${loadingProgress}%` }}
+                />
+              </div>
+            )}
+            <canvas
+              ref={canvasRef}
+              className={styles.sequenceCanvas}
+              style={{
+                width: '100%',
+                height: '100%'
               }}
-          >
-            <div className={styles.imageWrapper}>
-              <Image
-                src={imageSources[currentImageIndex]}
-                alt={`Step ${currentImageIndex + 1}`}
-                layout="fill"
-                objectFit="contain"
-                className={styles.sequenceImage}
-                priority
-                quality={100}
-              />
-            </div>
+            />
           </div>
+          
           <div className={styles.textContainer}>
             <div 
               className={styles.textSection} 
-              style={{ 
-                opacity: firstSectionOpacity,
-                transition: 'opacity 0.3s ease, transform 0.3s ease'
-              }}
+              style={{ opacity: firstSectionOpacity }}
             >
               <h2 className={styles.subtitle}>First 3 months:</h2>
               <div className={styles.description}>
@@ -186,10 +179,7 @@ const Sticky = () => {
             </div>
             <div 
               className={styles.textSection} 
-              style={{ 
-                opacity: secondSectionOpacity,
-                transition: 'opacity 0.3s ease, transform 0.3s ease'
-              }}
+              style={{ opacity: secondSectionOpacity }}
             >
               <h2 className={styles.subtitle}>Last 3 months:</h2>
               <div className={styles.description}>
