@@ -65,7 +65,7 @@ export default function Home() {
               <span className={styles.logoWrapper}>
                 <Image src="/logo.png" alt="Nautilus" width={150} height={40} className={styles.logoImage} priority/>
               </span>
-              <span>gives you six months to</span>
+              <span>gives you three months to</span>
               <span className={styles.textLine}>
                 <span className={styles.feature}>
                 explore
@@ -97,7 +97,7 @@ export default function Home() {
         </section>
       </motion.main>
       <Explanation />
-      <Sticky />
+      {/* <Sticky /> */}
       {/* <Program /> */}
       <Protegees />
       <Patrons />

@@ -13,13 +13,13 @@ const Explanation = () => {
             transition={{ duration: 1.5, delay: 0.5 }}>
         <h2 className={styles.title}>Get intense with your craft.</h2>
         <p className={styles.description}>
-        Nautilus is a six-month program for young and quirky individuals. <br />
+        Nautilus is a three-month program for young and quirky individuals. It is designed to give you some childhood wonder back. <br />
         <br />
-        We select a small group of bright creatives from art, to science and entrepreneurship, providing them with a monthly stipend, personalized guidance, and a vibrant community of peers. <br />
+        We select a small group of bright creatives from art, to science and entrepreneurship, that we receive in our San Francisco residence. <br />
         <br />
-        For the first three months, you live in our San Francisco residence with fellow participants. Then, you venture out on your own, either traveling or going back home for the remaining three months. <br />
+        For three months, you live together with your peers, receive a monthly stipend and personalized guidance.<br />
         <br />
-        Through it all, we support you to make the most out of this experience. <br />
+        Take a break from the noise of your life to follow your curiosity and master your craft. <br />
         </p>
 
         <div className={styles.cohortInfo}>

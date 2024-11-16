@@ -148,6 +148,7 @@
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
+import Link from 'next/link';
 import styles from "./page.module.css";
 import NaHeader from "../components/NaHeader";
 import Footer from "../components/Footer";
@@ -290,6 +291,30 @@ export default function Patrons() {
 								</div>
           </div>
           <p className={styles.last}>Join us as a patron by <a href="https://airtable.com/appztBooHuqyfQcSt/pagcIJNkE5ppfxQeD/form"  target="_blank" rel="noopener noreferrer">filling out this quick form</a>. We'll get back to you asap.</p>
+          <div className={styles.becomeContainer}>
+            <h3>Make a small donation</h3>
+            <div className={styles.donationText}>
+              <div className={styles.donationContent}>
+                <div className={styles.donate}>
+                  <p className={styles.text}>Every contribution, big or small, makes a meaningful difference. If a larger donation isn’t possible, your support at any level helps us nurture exceptional talent and keep the spirit of Nautilus alive. Every donation is tax-deductible, and we are truly grateful to have you as part of this journey.</p>
+                  <Link 
+                  href="https://hcb.hackclub.com/donations/start/nautilus" 
+                  target='_blank'
+                  >
+                    <span className={styles.applyButton}>Donate</span>
+                  </Link>
+                </div>
+                <Image
+											src="/donation.png"
+											alt="Donate"
+											width={400}
+                      height={600}
+                      quality={100}
+										/>
+              </div>
+
+            </div>
+          </div>
         </div>	
         <Footer />
       </div>

@@ -23,7 +23,7 @@
 }
 
 .last {
-  margin: 2rem 0 4rem 0;
+  margin: 2rem ;
 }
 
 .PatronsContent a {
@@ -57,6 +57,7 @@
 .becomeContainer {
   margin: 4rem 0 0 0;
   text-align: left;
+  width: 100%;
 }
 
 .becomeContainer h3 {
@@ -75,6 +76,37 @@
   margin: 2rem 0;
   flex-wrap: wrap;
   gap: 2rem;
+}
+
+.donationContent {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  width: 100%;
+}
+
+.donationContent img {
+  max-height: 500px;
+  height: 80%;
+  width: auto;
+  object-fit: contain;
+}
+
+.donate {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 2rem;
+  flex: 1;
+}
+
+.donate a {
+  text-decoration: none;
+  width: 100%;
+  text-align: center;
 }
 
 .card {
@@ -111,6 +143,19 @@
   justify-content: flex-start;
 }
 
+.applyButton {
+  background-color: #02AF54;
+  border-radius: 4px;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  text-decoration: none;
+  color: #FFF;
+  font-size: 1.4rem;
+  font-family: var(--font-feature-display);
+  display: inline-block;
+  width: auto;
+}
+
 .text {
   font-size: var(--bodytext);
   margin: 0;
@@ -120,48 +165,93 @@
   font-family: var(--font-feature-display);
   font-weight: 500;
 }
-.wrap{
+
+.wrap {
   display: flex;
   flex-direction: column;
 }
 
+.donationText {
+  width: 100%;
+}
+
 @media (max-width: 768px) {
-  .PatronsContent {
+  .PatronsContent, .donations {
     padding: 1rem;
   }
-  
+
   .PatronsContent h1 {
     font-size: 3rem;
     margin: 3rem 0;
   }
-  
+
   .PatronsContent p, .becomeContainer p {
     font-size: 1rem;
   }
-  .text{
+
+  .text {
     font-size: 1rem;
   }
-  .becomeContainer h3 {
-  font-size: 2rem;
+
+  .becomeContainer {
+    margin: 3rem 0 0 0;
+    width: 100%;
   }
+
+  .becomeContainer h3 {
+    font-size: 2rem;
+    text-align: left;
+  }
+
   .cardsContainer {
     flex-direction: column;
     align-items: center;
   }
-  
+
   .patrons {
     display: none;
   }
-  
+
   .mobileSlider {
     display: block;
   }
-  
+
   .becomeContainer p {
     text-align: left;
   }
-  
+
   .card {
     flex-basis: 100%;
+    max-width: 100%;
   }
+
+  .donationContent {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .donationContent img {
+    width: 100%;
+    height: auto;
+    max-height: 400px;
+    order: -1;
+  }
+
+  .donate {
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+
+  .donate .text {
+    text-align: left;
+    width: 100%;
+  }
+
+  /* .applyButton {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto;
+  } */
 }

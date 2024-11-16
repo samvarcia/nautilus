@@ -19,7 +19,7 @@ export default function Program() {
             <Principles />
             <div className={styles.Six}>
 							<div className={styles.sixHeader}>
-								<h1>Six months with us</h1>
+								<h1>Three months with us</h1>
 								<p>You are free to spend your time mostly how you want, from doing this yoga class that makes you feel good in the morning, to reading 8 hours a day, painting a gigantic art piece, and building software for the beauty of it.</p>
 							</div>
 							<div className={styles.sixLayout}>
@@ -58,7 +58,7 @@ export default function Program() {
 										className={styles.mobileImage}
 										quality={100}
 									/>
-										<p>For the first three months, Casa Nautilus will be your home, nestled in the heart of San Francisco. It’s a peaceful haven, offering you a place to retreat during the day. On Friday nights, join us for weekly salons and banquets, where you’ll connect with the patrons and mentors of our community.</p>
+										<p>For three months, Casa Nautilus will be your home, nestled in the heart of San Francisco. It’s a peaceful haven, offering you a place to retreat during the day. On Friday nights, join us for weekly salons and banquets, where you’ll connect with the patrons and mentors of our community.</p>
 									</div>
 									<Image
 										src="/six2.png"
@@ -79,7 +79,7 @@ export default function Program() {
 										quality={100}
 									/>
 									<div>
-										<h3>Onto your own Odyssey</h3>
+										<h3>Create the tale of your quest</h3>
 										<Image
 										src="/six3.png"
 										alt="Join the clan"
@@ -88,12 +88,12 @@ export default function Program() {
 										className={styles.mobileImage}
 										quality={100}
 									/>
-										<p>In the second half of the program, you’ll navigate mostly on your own. We’ll still sync up weekly, but the journey is yours to shape—whether that means traveling, heading back home, or exploring new paths as you continue your projects.</p>
+										<p>Throughout the program, you will document your experience, capturing the essence of your growth and discoveries. At the end of the three months, you’ll present it in any format you choose, creating a lasting reflection of this transformative chapter—something to look back on for years to come.</p>
 									</div>
 								</div>
 								<div className={styles.sixLayoutBox}>
 									<div>
-										<h3>Create the tale of your quest</h3>
+										<h3>Back home</h3>
 										<Image
 										src="/six4.png"
 										alt="Join the clan"
@@ -102,7 +102,7 @@ export default function Program() {
 										className={styles.mobileImage}
 										quality={100}
 									/>
-										<p>Throughout the program, you will document your experience, capturing the essence of your growth and discoveries. At the end of six months, you’ll present it in any format you choose, creating a lasting reflection of this transformative chapter—something to look back on for years to come.</p>
+										<p>The month following the end of the program is a time for integration. You continue to take part in regular check ins with your peers so that you get the support you need to make your learnings long lasting. After that, you stay part of the Nautilus clan: we’re here to support you!</p>
 									</div>
 									<Image
 										src="/six4.png"

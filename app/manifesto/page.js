@@ -34,7 +34,7 @@ export default function Manifesto() {
           <div className={styles.thirdParagraph}>
             <div className={styles.text}>
               <h2 className={styles.paraSub}>We believe exploring your potential is a human right</h2>
-              <p>We're offering you six months to reclaim the freedom of childhood exploration.</p>
+              <p>We're offering you three months to reclaim the freedom of childhood exploration.</p>
               <p>Nautilus will match you with a patron to pay your bills, and you'll decide what to learn and create. No tests, no daily grind. Just unfiltered freedom, a community of peers, and the guidance you need.</p>
               <p>We're here for you—whether you're an artist, hacker, writer, scientist, community builder, or a founder.</p>
             </div>
