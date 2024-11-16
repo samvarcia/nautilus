@@ -3,10 +3,10 @@
     flex-direction: column;
     align-items: center;
     margin-bottom: 3rem;
-    /* min-width: 200px; */
     width: 300px;
 } 
-.nameContainer{
+
+.nameContainer {
     background-color: var(--cream);
     font-family: var(--font-feature-display);
     font-weight: 400;
@@ -15,8 +15,15 @@
     margin-top: 1rem;
     text-decoration: underline;
 }
-.image{
+.specialName{
+    margin-bottom: 1rem;
+}
+.image {
     width: auto;
-    /* max-height: 280px; */
     max-height: 300px;
+}
+
+.specialImage {
+    width: auto;
+    max-height: 315px;
 }
