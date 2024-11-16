@@ -19,11 +19,11 @@ export default function Faq() {
 						<div className={styles.faqTextCont}>
 							<div className={styles.faqText}>
 								<h3>What is Nautilus?</h3>
-								<p>Nautilus is a 6 months patronage program for young talent who want to master their craft, from arts, to science and entrepreneurship.</p>
+								<p>Nautilus is a 3 months patronage program for young talent who want to master their craft, from arts, to science and entrepreneurship.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>How much is the monthly stipend I’ll be receiving?</h3>
-								<p>Between 2.5 and 3.5k USD/ month depending on your individual equipment needs.</p>
+								<p>We cover your housing, food, and on top of that, we give you a stipend for your equipment needs.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>Can I be attending school or working a job during the program?</h3>
@@ -55,11 +55,11 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>What if I can’t attend the whole program? Can I still join?</h3>
-								<p>We select people who can commit to being part of the program for its entire duration (6 months).</p>
+								<p>We select people who can commit to being part of the program for its entire duration (3 months + 1 month remote of integration).</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>If I’m accepted, do I need to move to San Francisco?</h3>
-								<p>Temporarily, yes. The first three months of the program are in-person at the Casa Nautilus. If needed, we’ll help you with your visa.</p>
+								<p>Temporarily, yes. The program is in-person at the Casa Nautilus. If needed, we’ll help you with your visa.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>Is there an application deadline?</h3>
@@ -70,20 +70,8 @@ export default function Faq() {
 								<p>We accept individuals only.</p>
 							</div>
 							<div className={styles.faqText}>
-								<h3>How is the grant given to me?</h3>
-								<p>Through monthly stipend wired to your bank account or via Paypal.</p>
-							</div>
-							<div className={styles.faqText}>
 								<h3>What is the kind of guidance you provide?</h3>
-								<p>Zelda, the founder of Nautilus, will be here with you every step of the way. From weekly group check ins, to supporting your individuals needs (while giving you as much freedom and agency as you want!), you won’t have to figured it all by yourself.
-
-In addition, your patron may mentor you 1-1 too!</p>
-							</div>
-							<div className={styles.faqText}>
-								<h3>What should I expect from the peers part of this program?</h3>
-								<p>Expect the kindest, most brilliant and talented people you’ve met in your entire life.
-
-We have a no asshole policy.</p>
+								<p>From weekly group check ins, to supporting your individuals needs (while giving you as much freedom and agency as you want!), you won’t have to figure it all by yourself.</p>
 							</div>
             </div>
         </div>
