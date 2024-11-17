@@ -305,11 +305,11 @@ export default function Patrons() {
                   </Link>
                 </div>
                 <Image
-											src="/donation.png"
+											src="/donation2.png"
 											alt="Donate"
-											width={400}
-                      height={600}
-                      quality={100}
+											width={600}
+                      height={400}
+                      // quality={100}
 										/>
               </div>
 
