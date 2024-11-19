@@ -13,11 +13,28 @@
     padding: 5px 8px;
     font-size: var(--bodytext);
     margin-top: 1rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name {
+    margin: 0;
     text-decoration: underline;
 }
-.specialName{
+
+.emergentVentures {
+    font-size: 0.85rem;
+    margin-top: 0.25rem;
+    /* color: #666; */
+    text-decoration: underline;
+}
+
+.specialName {
     margin-bottom: 1rem;
 }
+
 .image {
     width: auto;
     max-height: 300px;
@@ -27,8 +44,13 @@
     width: auto;
     max-height: 315px;
 }
+
 @media (max-width: 768px) {
     .card {
-    width: 100%;
+        width: 100%;
+    }
+    
+    .nameContainer {
+        width: fit-content;
     }
 }
