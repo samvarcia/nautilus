@@ -27,3 +27,8 @@
     width: auto;
     max-height: 315px;
 }
+@media (max-width: 768px) {
+    .card {
+    width: 100%;
+    }
+}
