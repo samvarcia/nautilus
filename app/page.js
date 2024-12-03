@@ -66,18 +66,18 @@ export default function Home() {
       return (
         <h1 className={styles.heroText}>
           <span className={styles.logoWrapper}>
-            <Image src="/logo.png" alt="Nautilus" width={150} height={40} className={styles.logoImage} priority/>
+            <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbBolgQUkVm4oRrJYnQMhBX8Gl5UL29gai7Izx" alt="Nautilus" width={150} height={40} className={styles.logoImage} priority/>
           </span>
           <span>gives you three months to</span>
           <span className={styles.textLine}>
             <span className={styles.feature}>explore</span>
-            <Image src="/explore.png" alt="Explore" width={150} height={80} className={styles.inlineImage} priority/>
+            <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbJsF4179y3L9MdDvP8ApTmnUBwacrqYItRWf2" alt="Explore" width={150} height={80} className={styles.inlineImage} priority/>
             , <span className={styles.feature}>learn</span>
-            <Image src="/image3.png" alt="Learn" width={150} height={80} className={styles.inlineImage} priority/>
+            <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpboRTbY3gwq0OplGu7W4PmbjzJr5kUC8L9TyEF" alt="Learn" width={150} height={80} className={styles.inlineImage} priority/>
           </span>
           <span className={styles.textLine}>
             and <span className={styles.feature}>create</span>
-            <Image priority src="/image2.png" alt="Create" width={150} height={80} className={styles.inlineImage} />
+            <Image priority src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbjgjfT18LfCnFZJv3lQNdMiOy709bpza6Y8k5" alt="Create" width={150} height={80} className={styles.inlineImage} />
             in complete freedom.
           </span>
         </h1>
