@@ -180,14 +180,14 @@ export default function Patrons() {
   };
 
   const patronsData = [
-    { imageSrc: "/Danielle.png", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
-    { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
-    { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
-    { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
-    { imageSrc: "/x.png", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
-    { imageSrc: "/j.png", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzbW95UmegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4ZGeC8rIwRhEea0HquBLjSbgf9VIYFs7Pnmi", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
   ];
-
+ 
   return (
     <>
       <NaHeader/>
@@ -228,7 +228,7 @@ export default function Patrons() {
 					<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/grantee.png"
+											src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFqjZbEhMxWPRfVpO8zK1ShoFaJUELA09iwuy"
 											alt="Grantee"
 											layout="fill"
 											objectFit="cover"
@@ -244,7 +244,7 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/comunity.png"
+											src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGbCsZBfVC3cXRu9PWG7k4mHopJsMxnz0lZj1"
 											alt="Community"
 											layout="fill"
 											objectFit="cover"
@@ -260,7 +260,7 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/guide.png"
+											src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbaJbJMycQHoAX5mO0UcaNY7IWDlCTE3tpsneP"
 											alt="Guide"
 											layout="fill"
 											objectFit="cover"
@@ -276,7 +276,7 @@ export default function Patrons() {
 								<div className={styles.card}>
 									<div className={styles.imageContainer}>
 										<Image
-											src="/money.png"
+											src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb9YSG9PvWU61aXQibKJrFtBkjTR7p3hySCD0A"
 											alt="Money"
 											layout="fill"
 											objectFit="cover"
@@ -305,7 +305,7 @@ export default function Patrons() {
                   </Link>
                 </div>
                 <Image
-											src="/donation2.png"
+											src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbpXm3rLdaQA6nvXbsKFfIYje754JWVgiPBlqr"
 											alt="Donate"
 											width={600}
                       height={400}
