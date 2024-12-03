@@ -30,9 +30,9 @@ const Patrons = () => {
 
   const patrons = [
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzbW95UmegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
-    { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
-    { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
-    { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4ZGeC8rIwRhEea0HquBLjSbgf9VIYFs7Pnmi", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
     // { imageSrc: "/j.png", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
     // { imageSrc: "/x.png", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
   ];
