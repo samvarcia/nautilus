@@ -29,7 +29,7 @@ const Patrons = () => {
   };
 
   const patrons = [
-    { imageSrc: "/Danielle.png", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzbW95UmegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
     { imageSrc: "/1517Fund.png", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
     { imageSrc: "/PatrickRodriguez.png", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
     { imageSrc: "/TylerCowen.png", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },

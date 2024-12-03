@@ -12,16 +12,16 @@ const Protegees = () => {
             <div className={styles.gridTopLeft}> 
               <h1 className={styles.title}>Our proteges</h1>
               <div className={`${styles.item} ${styles.item1}`}>
-                <Image src="/b1.png" alt="Protege 1" width={600} height={200} className={styles.image} />
+                <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbXx1TLbq8Pj0dIvZfGLuQetS7zlHkoEKqwWpJ" alt="Protege 1" width={600} height={200} className={styles.image} />
               </div> 
             </div>
             <div className={`${styles.item} ${styles.item2}`}>
-              <Image src="/b2.png" alt="Protege 2" width={300} height={500} className={styles.image} />
+              <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb5K5iyaze6uGOJ0BtMc4DiVwkNHZjKhgndCAl" alt="Protege 2" width={300} height={500} className={styles.image} />
             </div>
           </div>
           <div className={styles.gridBottom}>
             <div className={`${styles.item} ${styles.item3}`}>
-              <Image src="/b3.png" alt="Protege 3"width={400} height={500}  className={styles.image} />
+              <Image src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbMH0UCKiEqIfG7xPcXuwkFtHeUmzaCV5yv0Js" alt="Protege 3"width={400} height={500}  className={styles.image} />
             </div>
             <div className={`${styles.item} ${styles.item4}`}>
               <FramedT />
