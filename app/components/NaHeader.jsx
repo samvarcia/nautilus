@@ -40,7 +40,7 @@ const NaHeader = () => {
       <animated.header className={styles.initialHeader} style={initialHeaderAnimation}>
         <Link href="/">
           <Image 
-            src="/nautilus-logo-full.png" 
+            src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbpFSUIbdaQA6nvXbsKFfIYje754JWVgiPBlqr" 
             alt="Nautilus - Master Your Craft" 
             width={300} 
             height={100}
@@ -53,7 +53,7 @@ const NaHeader = () => {
         <div className={styles.scrolledHeaderContent}>
           <Link href="/">
             <Image 
-              src="/nautilus-logo.png" 
+              src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbv2EZoxFNI3qYrb7MzgTcBV1lFPnRGjC59huU" 
               alt="Nautilus" 
               width={170} 
               height={50}
