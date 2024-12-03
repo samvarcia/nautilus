@@ -25,7 +25,7 @@ export default function Program() {
 							<div className={styles.sixLayout}>
 								<div className={styles.sixLayoutBox}>
 									<Image
-										src="/six1.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbK4FApoXl3uXEP75sfLOz8W2FYryipob4QNMH"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -36,7 +36,7 @@ export default function Program() {
 									<div>
 										<h3>Join the clan</h3>
 									<Image
-										src="/six1.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbK4FApoXl3uXEP75sfLOz8W2FYryipob4QNMH"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -51,7 +51,7 @@ export default function Program() {
 									<div>
 										<h3>Live at Casa Nautilus</h3>
 										<Image
-										src="/six2.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGP2yi0SfVC3cXRu9PWG7k4mHopJsMxnz0lZj"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -61,7 +61,7 @@ export default function Program() {
 										<p>For three months, Casa Nautilus will be your home, nestled in the heart of San Francisco. It’s a peaceful haven, offering you a place to retreat during the day. On Friday nights, join us for weekly salons and banquets, where you’ll connect with the patrons and mentors of our community.</p>
 									</div>
 									<Image
-										src="/six2.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGP2yi0SfVC3cXRu9PWG7k4mHopJsMxnz0lZj"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -71,7 +71,7 @@ export default function Program() {
 								</div>
 								<div className={styles.sixLayoutBox}>
 									<Image
-										src="/six3.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbwU6Dw9aUKYbluhSotcZ5gp8Vs9veFqLMIGjH"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -81,7 +81,7 @@ export default function Program() {
 									<div>
 										<h3>Create the tale of your quest</h3>
 										<Image
-										src="/six3.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbwU6Dw9aUKYbluhSotcZ5gp8Vs9veFqLMIGjH"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -95,7 +95,7 @@ export default function Program() {
 									<div>
 										<h3>Back home</h3>
 										<Image
-										src="/six4.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4cFtO9IwRhEea0HquBLjSbgf9VIYFs7Pnmi3"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -105,7 +105,7 @@ export default function Program() {
 										<p>The month following the end of the program is a time for integration. You continue to take part in regular check ins with your peers so that you get the support you need to make your learnings long lasting. After that, you stay part of the Nautilus clan: we’re here to support you!</p>
 									</div>
 									<Image
-										src="/six4.png"
+										src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4cFtO9IwRhEea0HquBLjSbgf9VIYFs7Pnmi3"
 										alt="Join the clan"
 										width={500}
 										height={400}
@@ -120,13 +120,6 @@ export default function Program() {
 							<div className={styles.cta}>
 								<Framed />
 							</div>
-							{/* <Image
-									src="/program2.png"
-									alt="TEEN"
-									width={600}
-									height={740}
-									className={styles.teen}
-								/> */}
 						</div>
         </div>	
       <Footer />

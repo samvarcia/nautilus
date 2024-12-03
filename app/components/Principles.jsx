@@ -27,7 +27,7 @@ const Principles = () => {
         </div>
         <div className={styles.imageContainer}>
           <Image
-            src="/clouds.png"
+            src="https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbr5TTsZXAOuItV1wUG8gE3fnxavMXqTdieZFb"
             alt="People looking at clouds"
             fill
             // sizes="(max-width: 768px) 100vw, 50vw"
