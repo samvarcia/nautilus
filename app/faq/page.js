@@ -63,7 +63,9 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>Is there an application deadline?</h3>
-								<p>The application deadline for the next cohort (starting March 1st 2025) is December 31st 2024 at midnight PT. If you apply after that, we’ll consider you for the following cohort, starting on June 1st 2025.</p>
+								<p>The application deadline for our first cohort (starting June 1st 2025) is January 20th at midnight PT. We'll announce the selected participants by March 1st. <br/>
+								<br/>
+If you apply after that deadline, we'll consider you for the following cohort (starting September 1st 2025).</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>Can I apply with my team?</h3>
