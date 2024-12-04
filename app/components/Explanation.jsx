@@ -30,7 +30,7 @@ const Explanation = () => {
                 >
                 APPLY TODAY. 
               </Link>
-              {'   '} NEXT COHORT ON MARCH 1ST.               
+              {'   '} NEXT COHORT ON JUNE 1ST.               
             </span>
         </div>
       </motion.div> 
