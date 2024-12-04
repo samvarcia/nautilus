@@ -185,6 +185,7 @@ export default function Patrons() {
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbfEPRVii25QpDL2MF9vckYZ0SizWOK8GgnAH4", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
   ];
  
