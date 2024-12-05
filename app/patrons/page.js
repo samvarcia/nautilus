@@ -181,8 +181,8 @@ export default function Patrons() {
 
   const patronsData = [
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzbW95UmegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4ZGeC8rIwRhEea0HquBLjSbgf9VIYFs7Pnmi", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4ZGeC8rIwRhEea0HquBLjSbgf9VIYFs7Pnmi", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbJy8Xy09y3L9MdDvP8ApTmnUBwacrqYItRWf2", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
