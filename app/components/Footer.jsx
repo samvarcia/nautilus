@@ -13,7 +13,7 @@ const Footer = () => {
                 <div className="">
                     <nav>
                         <ul className="">
-                            <li><Link href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                            <li><Link href="https://airtable.com/appcXBT6ZoSigrsI2/pagFQikWyq1CAVoSi/form" 
                   target='_blank' className="">Apply</Link></li>
                             <li><Link href="/program" className="">About the program</Link></li>
                             <li><Link href="/faq" className="">FAQ</Link></li>
@@ -31,7 +31,7 @@ const Footer = () => {
                 </div>
             </div>
             <div className={styles.footerRight}>
-                <p className="">&copy; Nautilus Quest - 2024, all rights reserved</p>
+                <p className="">&copy; Nautilus Quest - 2025, all rights reserved</p>
                 <SubscribeForm />
             </div>
         </div>

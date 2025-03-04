@@ -31,19 +31,20 @@
 }
 
 .patrons {
-  margin: 4rem 0 0 0;
-  width: 130%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  margin: 4rem 0;
+  /* width: 90%; */
+  /* max-width: 1200px; */
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, auto);
   gap: 2rem;
+  /* justify-items: center; */
 }
 
 /* Patron card sizing for desktop layout */
 .patrons > div {
-  flex: 0 0 calc(33.33% - 4rem);
-  margin-bottom: 2rem;
+  width: 100%;
+  margin-bottom: 0;
 }
 
 .patrons > div:nth-last-child(-n+4) {

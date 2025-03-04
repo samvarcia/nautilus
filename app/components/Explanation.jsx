@@ -25,12 +25,15 @@ const Explanation = () => {
         <div className={styles.cohortInfo}>
           <span className={styles.cohortText}>
               <Link 
-                  href="https://airtable.com/appFK7duZA7g8BPxH/pagd34iOWzjCxeLzB/form" 
+                  href="https://airtable.com/appcXBT6ZoSigrsI2/pagFQikWyq1CAVoSi/form" 
                   target='_blank'
                 >
-                APPLY TODAY. 
+                 APPLY TODAY. 
               </Link>
-              {'   '} NEXT COHORT ON JUNE 1ST.               
+              {'   '}  FOR COHORT 2 IN SEPTEMBER. 
+              <br />             
+              SUMMER COHORT CLOSED.
+              {'   '} 
             </span>
         </div>
       </motion.div> 

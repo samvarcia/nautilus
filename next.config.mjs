@@ -8,6 +8,12 @@ const nextConfig = {
           port: '',
           pathname: '/a/h8b8ligav2/**',
         },
+        {
+          protocol: 'https',
+          hostname: 'h8b8ligav2.ufs.sh',
+          port: '',
+          pathname: '/f/**',
+        },
       ],
     },
 };
