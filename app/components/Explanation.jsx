@@ -30,9 +30,8 @@ const Explanation = () => {
                 >
                  APPLY TODAY. 
               </Link>
-              {'   '}  FOR COHORT 2 IN SEPTEMBER. 
-              <br />             
-              SUMMER COHORT CLOSED.
+              {'   '}  FOR COHORT 2
+              STARTING IN SEPTEMBER.
               {'   '} 
             </span>
         </div>

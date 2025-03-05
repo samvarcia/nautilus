@@ -44,7 +44,7 @@
   }
   
   .cohortText {
-    font-size: var(--subtitle);
+    font-size: 2rem;
     font-weight: bold;
     font-weight: 500; /* Ultra weight */
     font-family: var(--font-feature-display);
