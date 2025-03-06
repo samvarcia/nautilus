@@ -28,7 +28,7 @@ const Explanation = () => {
                   href="https://airtable.com/appcXBT6ZoSigrsI2/pagFQikWyq1CAVoSi/form" 
                   target='_blank'
                 >
-                 APPLY TODAY. 
+                 APPLY TODAY 
               </Link>
               {'   '}  FOR COHORT 2
               STARTING IN SEPTEMBER.

@@ -42,7 +42,7 @@ export default function Patrons() {
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbJy8Xy09y3L9MdDvP8ApTmnUBwacrqYItRWf2", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
-    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpby0J8NEupzoah5itw7Pd8O0sEAxSuC4lqrVBg", patronName: "Luis Cuende", patronLink: "https://x.com/licuende" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbpTMUfIdaQA6nvXbsKFfIYje754JWVgiPBlqr", patronName: "Luis Cuende", patronLink: "https://x.com/licuende" },
   ];
  
   return (
