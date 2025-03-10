@@ -67,7 +67,6 @@ export default function Faq() {
 
 If you apply after that deadline, we'll consider you for the following cohort (first quarter 2026).<br/>
 								<br/>
-If you apply after that deadline, we'll consider you for the following cohort (starting September 1st 2025).</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>Can I apply with my team?</h3>
