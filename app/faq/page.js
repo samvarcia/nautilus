@@ -63,9 +63,7 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>Is there an application deadline?</h3>
-								<p>Applications have closed for cohort 1. The application deadline for our second cohort (starting beginning of September 2025) is May 15 at midnight PT. We'll announce the selected participants about 3 months before the start of the cohort.
-
-If you apply after that deadline, we'll consider you for the following cohort (first quarter 2026).<br/>
+								<p>Applications have closed for cohort 1. The application deadline for our second cohort (starting beginning of September 2025) is May 15 at midnight PT. We'll announce the selected participants about 3 months before the start of the cohort. If you apply after that deadline, we'll consider you for the following cohort (first quarter 2026).</p>
 								<br/>
 							</div>
 							<div className={styles.faqText}>
