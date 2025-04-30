@@ -1,5 +1,3 @@
-
-
 "use client"
 import React, { useState, useEffect } from 'react';
 import Image from "next/image";
@@ -41,8 +39,13 @@ export default function Patrons() {
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbJy8Xy09y3L9MdDvP8ApTmnUBwacrqYItRWf2", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O’Shaughnessy", patronLink: "https://www.osv.llc/" },
+    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O'Shaughnessy", patronLink: "https://www.osv.llc/" },
     { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbpTMUfIdaQA6nvXbsKFfIYje754JWVgiPBlqr", patronName: "Luis Cuende", patronLink: "https://x.com/licuende" },
+    { imageSrc: "", patronName: "", patronLink: "", isBlank: true },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbQeFSFUYjSYrRWk8l3bIVLcNwKHZegvC2XJu1", patronName: "Amine Benjelloun", patronLink: "https://www.instagram.com/bengeekly/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbB0VfZ4kVm4oRrJYnQMhBX8Gl5UL29gai7Izx", patronName: "Michael Karnjanaprakorn", patronLink: "https://mikekarnj.com/" },
+    // Add two invisible blank patrons to center the last row
+    { imageSrc: "", patronName: "", patronLink: "", isBlank: true },
   ];
  
   return (
@@ -54,7 +57,7 @@ export default function Patrons() {
           <p>Our patrons are the Medicis of the 21st Century. Prominent intellectuals, artists, founders or investors, they are taking action towards a brighter world by supporting the talents of Nautilus.</p>
           {isMobile ? (
             <Slider {...settings} className={styles.mobileSlider}>
-              {patronsData.map((patron, index) => (
+              {patronsData.filter(patron => !patron.isBlank).map((patron, index) => (
                 <div key={index}>
                   <PatronProfileCard 
                     imageSrc={patron.imageSrc}
@@ -67,13 +70,18 @@ export default function Patrons() {
           ) : ( 
             <div className={styles.patrons}>
               {patronsData.map((patron, index) => (
-                <PatronProfileCard 
-                  key={index}
-                  imageSrc={patron.imageSrc}
-                  patronName={patron.patronName}
-                  patronLink={patron.patronLink}
-
-                />
+                patron.isBlank ? (
+                  // Render an invisible spacer for blank patrons
+                  <div key={`blank-${index}`} className={styles.invisiblePatron}></div>
+                ) : (
+                  // Render normal patron card
+                  <PatronProfileCard 
+                    key={index}
+                    imageSrc={patron.imageSrc}
+                    patronName={patron.patronName}
+                    patronLink={patron.patronLink}
+                  />
+                )
               ))}
             </div>
           )}
@@ -94,7 +102,7 @@ export default function Patrons() {
 									</div>
 									<div className={styles.textContainer}>
 										<p className={styles.text}>
-										<span className={styles.textAlt}>We’re finding and matching you with a grantee,</span> based on your interests. This ensures your investment aligns with your passion.
+										<span className={styles.textAlt}>We're finding and matching you with a grantee,</span> based on your interests. This ensures your investment aligns with your passion.
 										</p>
 									</div>
 								</div>
@@ -110,7 +118,7 @@ export default function Patrons() {
 									</div>
 									<div className={styles.textContainer}>
 										<p className={styles.text}>
-										<span className={styles.textAlt}>We’re creating a community</span> of exceptional young talents and patrons. Come meet them at our banquets.
+										<span className={styles.textAlt}>We're creating a community</span> of exceptional young talents and patrons. Come meet them at our banquets.
 										</p>
 									</div>
 								</div>
@@ -126,7 +134,7 @@ export default function Patrons() {
 									</div>
 									<div className={styles.textContainer}>
 										<p className={styles.text}>
-										<span className={styles.textAlt}>We’re guiding them,</span> to make the most of the experience and connect with peers. You get to mentor them too if you want!
+										<span className={styles.textAlt}>We're guiding them,</span> to make the most of the experience and connect with peers. You get to mentor them too if you want!
 										</p>
 									</div>
 								</div>
@@ -153,7 +161,7 @@ export default function Patrons() {
             <div className={styles.donationText}>
               <div className={styles.donationContent}>
                 <div className={styles.donate}>
-                  <p className={styles.text}>Every contribution, big or small, makes a meaningful difference. If a larger donation isn’t possible, your support at any level helps us nurture exceptional talent and keep the spirit of Nautilus alive. Every donation is tax-deductible, and we are truly grateful to have you as part of this journey.</p>
+                  <p className={styles.text}>Every contribution, big or small, makes a meaningful difference. If a larger donation isn't possible, your support at any level helps us nurture exceptional talent and keep the spirit of Nautilus alive. Every donation is tax-deductible, and we are truly grateful to have you as part of this journey.</p>
                   <Link 
                   href="https://hcb.hackclub.com/donations/start/nautilus" 
                   target='_blank'
