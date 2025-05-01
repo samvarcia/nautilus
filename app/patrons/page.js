@@ -30,6 +30,10 @@ export default function Patrons() {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    centerMode: false,
+    adaptiveHeight: true,
+    className: styles.mobileSlider,
+    lazyLoad: true
   };
 
   const patronsData = [
@@ -56,17 +60,19 @@ export default function Patrons() {
           <h1 className={styles.PatronsTitle}>Patrons</h1>
           <p>Our patrons are the Medicis of the 21st Century. Prominent intellectuals, artists, founders or investors, they are taking action towards a brighter world by supporting the talents of Nautilus.</p>
           {isMobile ? (
-            <Slider {...settings} className={styles.mobileSlider}>
-              {patronsData.filter(patron => !patron.isBlank).map((patron, index) => (
-                <div key={index}>
-                  <PatronProfileCard 
-                    imageSrc={patron.imageSrc}
-                    patronName={patron.patronName}
-                    patronLink={patron.patronLink}
-                  />
-                </div>
-              ))}
-            </Slider>
+            <div style={{ width: '100%', maxWidth: '300px', margin: '0 auto' }}>
+              <Slider {...settings}>
+                {patronsData.filter(patron => !patron.isBlank).map((patron, index) => (
+                  <div key={index}>
+                    <PatronProfileCard 
+                      imageSrc={patron.imageSrc}
+                      patronName={patron.patronName}
+                      patronLink={patron.patronLink}
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
           ) : ( 
             <div className={styles.patrons}>
               {patronsData.map((patron, index) => (

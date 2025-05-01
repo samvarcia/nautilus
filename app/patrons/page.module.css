@@ -52,17 +52,50 @@
 }
 
 .mobileSlider {
-  margin: 4rem 0 0 0;
+  margin-bottom: 50px; /* Space for dots */
   width: 100%;
-  max-width: 250px;
+  display: block !important;
 }
 
-.mobileSlider .slick-dots {
-  bottom: -30px;
+.mobileSlider :global(.slick-slider) {
+  width: 100%;
+  margin: 0 auto;
 }
 
-.mobileSlider .slick-dots li button:before {
-  font-size: 10px;
+.mobileSlider :global(.slick-slide) {
+  padding: 0 10px;
+  box-sizing: border-box;
+  display: flex !important;
+  justify-content: center;
+}
+
+.mobileSlider :global(.slick-list) {
+  margin: 0 -10px;
+  overflow: visible;
+}
+
+.mobileSlider :global(.slick-track) {
+  display: flex;
+  align-items: center;
+}
+
+.mobileSlider :global(.slick-dots) {
+  bottom: -40px;
+}
+
+.mobileSlider :global(.slick-dots li) {
+  margin: 0 5px;
+}
+
+.mobileSlider :global(.slick-dots li button:before) {
+  font-size: 8px;
+  color: var(--cream);
+  opacity: 0.5;
+}
+
+.mobileSlider :global(.slick-dots li.slick-active button:before) {
+  opacity: 1;
+  color: var(--cream);
 }
 
 .becomeContainer {
