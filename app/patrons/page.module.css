@@ -80,11 +80,12 @@
 }
 
 .mobileSlider :global(.slick-dots) {
-  bottom: -40px;
+  bottom: -95px;
+  margin-top: 10px;
 }
 
 .mobileSlider :global(.slick-dots li) {
-  margin: 0 5px;
+  margin: 10px 5px;
 }
 
 .mobileSlider :global(.slick-dots li button:before) {
@@ -95,7 +96,7 @@
 
 .mobileSlider :global(.slick-dots li.slick-active button:before) {
   opacity: 1;
-  color: var(--cream);
+  color: var(--foreground);
 }
 
 .becomeContainer {
