@@ -60,7 +60,7 @@ export default function Patrons() {
           <h1 className={styles.PatronsTitle}>Patrons</h1>
           <p>Our patrons are the Medicis of the 21st Century. Prominent intellectuals, artists, founders or investors, they are taking action towards a brighter world by supporting the talents of Nautilus.</p>
           {isMobile ? (
-            <div style={{ width: '100%', maxWidth: '300px', margin: '0 auto' }}>
+            <div style={{ width: '100%', maxWidth: '300px', margin: '20px auto' }}>
               <Slider {...settings}>
                 {patronsData.filter(patron => !patron.isBlank).map((patron, index) => (
                   <div key={index}>
