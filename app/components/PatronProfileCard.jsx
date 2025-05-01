@@ -6,21 +6,21 @@ import styles from './PatronProfileCard.module.css';
 const PatronProfileCard = ({ imageSrc, patronName, patronLink }) => {
   const isSpecialImage = imageSrc.includes('x.png');
   const isTylerCowen = patronName === "Tyler Cowen";
-  const imageWidth = isSpecialImage ? 325 : 300;
-  const dimensions = { height: 350, width: imageWidth };
+  const dimensions = { height: 350, width: 250 };
 
   return (
     <div className={styles.card}>
       <div className={styles.imageContainer}>
-        <Image
+        <Image 
           src={imageSrc} 
           alt={`Portrait of ${patronName}`}
           height={dimensions.height}
           width={dimensions.width}
-          className={`${styles.image} ${isSpecialImage ? styles.specialImage : ''}`}
+          className={styles.image}
+          objectFit="contain"
         />
       </div>
-      <div className={`${styles.nameContainer} ${isSpecialImage ? styles.specialName : ''}`}>
+      <div className={styles.nameContainer}>
         <a href={patronLink} target='_blank' rel="noopener noreferrer">
           <p className={styles.name}>{patronName}</p>
         </a>

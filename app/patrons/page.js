@@ -35,15 +35,15 @@ export default function Patrons() {
   const patronsData = [
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzbW95UmegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Danielle Strachman", patronLink: 'https://x.com/DStrachman' },
     { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbGlaXgXfVC3cXRu9PWG7k4mHopJsMxnz0lZj1", patronName: "Patrick Rodriguez", patronLink: 'https://x.com/stratospark' },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpb4ZGeC8rIwRhEea0HquBLjSbgf9VIYFs7Pnmi", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbzdepWemegoEjVt9x0LXQdrB2HWvfpAIicYFb", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbFOA52F6hMxWPRfVpO8zK1ShoFaJUELA09iwu", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbJy8Xy09y3L9MdDvP8ApTmnUBwacrqYItRWf2", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
-    { imageSrc: "https://utfs.io/a/h8b8ligav2/1HacuqBhXBpbDFyc71RLOx1m42HGM5Q6jWtAdZgCKUTRcuz9", patronName: "Jim O'Shaughnessy", patronLink: "https://www.osv.llc/" },
-    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbpTMUfIdaQA6nvXbsKFfIYje754JWVgiPBlqr", patronName: "Luis Cuende", patronLink: "https://x.com/licuende" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbVB8VCO5XV8DsZMkcB1FvnoU0GuzqPmSYAJTO", patronName: "1517 Fund", patronLink: "https://www.1517fund.com/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbiFgHfmo5AqkJzTR2XVxb3pfMj7aBU60DNOyw", patronName: "Tyler Cowen", patronLink: "https://x.com/tylercowen" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbVnIbJy5XV8DsZMkcB1FvnoU0GuzqPmSYAJTO", patronName: "Stephen Cole", patronLink: "https://x.com/sthenc" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpb4vswBmIwRhEea0HquBLjSbgf9VIYFs7Pnmi3", patronName: "Daylight", patronLink: "https://daylightcomputer.com/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbOnROfwl5fRC6zevLJxuj37ymVAGsdlQY9gEZ", patronName: "Jim O'Shaughnessy", patronLink: "https://www.osv.llc/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbgVInUQw7zSBRd6MawJFU2YDrKOQ9fXvsjAlH", patronName: "Luis Cuende", patronLink: "https://x.com/licuende" },
     { imageSrc: "", patronName: "", patronLink: "", isBlank: true },
-    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbQeFSFUYjSYrRWk8l3bIVLcNwKHZegvC2XJu1", patronName: "Amine Benjelloun", patronLink: "https://www.instagram.com/bengeekly/" },
-    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbB0VfZ4kVm4oRrJYnQMhBX8Gl5UL29gai7Izx", patronName: "Michael Karnjanaprakorn", patronLink: "https://mikekarnj.com/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpboU89u5gwq0OplGu7W4PmbjzJr5kUC8L9TyEF", patronName: "Amine Benjelloun", patronLink: "https://www.instagram.com/bengeekly/" },
+    { imageSrc: "https://h8b8ligav2.ufs.sh/f/1HacuqBhXBpbrxoOSLAOuItV1wUG8gE3fnxavMXqTdieZFbB", patronName: "Michael Karnjanaprakorn", patronLink: "https://mikekarnj.com/" },
     // Add two invisible blank patrons to center the last row
     { imageSrc: "", patronName: "", patronLink: "", isBlank: true },
   ];

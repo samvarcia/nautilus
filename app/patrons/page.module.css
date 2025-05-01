@@ -32,33 +32,29 @@
 
 .patrons {
   margin: 4rem 0;
-  /* width: 90%; */
-  /* max-width: 1200px; */
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, auto);
+  grid-template-columns: repeat(4, 250px);
   gap: 2rem;
-  justify-items: center;
+  justify-content: center;
 }
+
 .invisiblePatron {
-  flex: 0 0 calc(25% - 2rem);
+  width: 250px;
   visibility: hidden;
   height: 0;
   margin: 0;
 }
-/* Patron card sizing for desktop layout */
-.patrons > div {
-  width: 100%;
-  margin-bottom: 0;
-}
 
-.patrons > div:nth-last-child(-n+4) {
-  flex: 0 0 calc(25% - 4rem);
+/* Remove the old patron card sizing */
+.patrons > div {
+  width: 250px;
+  margin-bottom: 0;
 }
 
 .mobileSlider {
   margin: 4rem 0 0 0;
   width: 100%;
+  max-width: 250px;
 }
 
 .mobileSlider .slick-dots {
