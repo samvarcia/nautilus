@@ -63,7 +63,7 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>Is there an application deadline?</h3>
-								<p>Applications for cohort #1 (summer 2025) have closed. For cohort #2 (fall 2025), we are taking continuous applications until we run out of spots. Hurry to apply!</p>
+								<p>Applications for cohort #1 (Summer 2025) have closed. For cohort #2 (Fall 2025), we are taking continuous applications until we run out of spots. Hurry to apply!</p>
 								<br/>
 							</div>
 							<div className={styles.faqText}>
