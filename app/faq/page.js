@@ -31,7 +31,7 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>How many proteges do you select?</h3>
-								<p>We select between 5 and 10 protégés (our grantees) per cohort.</p>
+								<p>We select between 8 and 12 protégés (our fellows) per cohort.</p>
 							</div>
 							<div className={styles.faqText}>
 								<h3>What is the age limit to apply?</h3>
@@ -63,7 +63,7 @@ export default function Faq() {
 							</div>
 							<div className={styles.faqText}>
 								<h3>Is there an application deadline?</h3>
-								<p>Applications have closed for cohort 1. The application deadline for our second cohort (starting beginning of September 2025) is May 15 at midnight PT. We'll announce the selected participants about 3 months before the start of the cohort. If you apply after that deadline, we'll consider you for the following cohort (first quarter 2026).</p>
+								<p>Applications for cohort #1 (summer 2025) have closed. For cohort #2 (fall 2025), we are taking continuous applications until we run out of spots. Hurry to apply!</p>
 								<br/>
 							</div>
 							<div className={styles.faqText}>
