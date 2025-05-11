@@ -30,7 +30,7 @@ export default function Faq() {
 								<p>Nope, we want you all in. Dropout or take a gap year!</p>
 							</div>
 							<div className={styles.faqText}>
-								<h3>How many protégés do you select?</h3>
+								<h3>How many proteges do you select?</h3>
 								<p>We select between 8 and 12 protégés (our fellows) per cohort.</p>
 							</div>
 							<div className={styles.faqText}>
